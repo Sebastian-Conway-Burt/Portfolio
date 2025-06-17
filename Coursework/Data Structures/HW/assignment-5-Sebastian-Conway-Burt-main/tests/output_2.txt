@@ -1,0 +1,84 @@
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Enter the name of the customer: Enter the number of pancakes: Enter the type of pancakes: 
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Profit since last check: 0
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Profit since last check: 12
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Stack empty, cannot pop an item!
+No money in the cash register!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Exiting program.

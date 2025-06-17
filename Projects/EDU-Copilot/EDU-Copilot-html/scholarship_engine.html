@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Engine - EducAtIon Advisor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/edu-copilot-logo.jpg" alt="EducAtIon Advisor Logo" class="navbar-logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic_planning.html">Academic Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_assistance.html">Class Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill_enhancement.html">Skills</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="advisor_connect.html">Advisor AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career_launchpad.html">Career</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="scholarship_engine.html">Scholarships</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="milestone_tracker.html">Milestones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item me-2">
+                         <a href="profile_settings.html" class="nav-link" title="Profile & Settings"><i class="fas fa-user-circle fs-5"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                            <i class="fas fa-star me-1"></i>Upgrade to Premium
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-4 bg-light border-bottom mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Scholarship Engine</h1>
+            <p class="text-muted">Find funding opportunities tailored to you. Build your profile for AI-powered matching!</p>
+        </div>
+    </header>
+
+     <main class="container mb-5">
+
+        <section id="premium-notice" class="mb-5">
+             <div class="alert alert-warning d-flex align-items-center" role="alert">
+                 <i class="fas fa-star fs-4 me-3 text-warning"></i>
+                <div>
+                    Maximize your scholarship potential! <strong>Premium users unlock AI-powered matching</strong> based on a detailed profile, receive weekly personalized opportunity alerts, and can track applications seamlessly. Freemium users can access links to external public scholarship databases below.
+                    <button class="btn btn-sm btn-warning ms-3" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Premium</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="scholarship-profile" class="mb-5">
+            <h3 class="mb-3"><i class="fas fa-user-edit me-2"></i>Step 1: Build Your Scholarship Profile</h3>
+            <p class="text-muted small">Providing detailed information allows our AI (Premium Feature) to find the most relevant scholarships for you. Your data is kept secure and used only for matching purposes. Fill out as much as you feel comfortable with. Fields marked with <i class="fas fa-star text-warning fa-xs"></i> heavily influence Premium AI matching.</p>
+
+            <div class="accordion" id="profileAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAcademic">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademic" aria-expanded="false" aria-controls="collapseAcademic">
+                            Academic Information <i class="fas fa-star text-warning fa-xs ms-1"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseAcademic" class="accordion-collapse collapse" aria-labelledby="headingAcademic" data-bs-parent="#profileAccordion">
+                        <div class="accordion-body">
+                            <p class="text-muted small">Some data may sync from Academic Planning for Premium users.</p>
+                             <div class="row g-3">
+                                 <div class="col-md-4">
+                                     <label for="profileGPA" class="form-label form-label-sm">Cumulative GPA</label>
+                                     <input type="number" class="form-control form-control-sm" id="profileGPA" step="0.01" placeholder="e.g., 3.75" disabled>
+                                 </div>
+                                 <div class="col-md-8">
+                                     <label for="profileMajor" class="form-label form-label-sm">Major(s) / Minor(s)</label>
+                                     <input type="text" class="form-control form-control-sm" id="profileMajor" placeholder="e.g., Computer Science, Minor in Business" disabled>
+                                 </div>
+                                  <div class="col-md-4">
+                                     <label for="profileYear" class="form-label form-label-sm">Current Year</label>
+                                     <select id="profileYear" class="form-select form-select-sm" disabled><option selected>Select...</option><option>Freshman</option><option>Sophomore</option><option>Junior</option><option>Senior</option><option>Graduate</option></select>
+                                 </div>
+                                  <div class="col-md-4">
+                                     <label for="profileGradYear" class="form-label form-label-sm">Expected Graduation Year</label>
+                                     <input type="number" class="form-control form-control-sm" id="profileGradYear" placeholder="e.g., 2027" disabled>
+                                 </div>
+                                 <div class="col-md-4">
+                                     <label for="profileTestScores" class="form-label form-label-sm">Test Scores (Optional: SAT/ACT)</label>
+                                     <input type="text" class="form-control form-control-sm" id="profileTestScores" placeholder="e.g., SAT 1450, ACT 32" disabled>
+                                 </div>
+                                 <div class="col-12">
+                                      <label for="profileHonors" class="form-label form-label-sm">Key Coursework / Honors / Dean's List</label>
+                                      <textarea class="form-control form-control-sm" id="profileHonors" rows="2" placeholder="e.g., Dean's List Fall 2024, Relevant advanced courses..." disabled></textarea>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingPersonal">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal" aria-expanded="false" aria-controls="collapsePersonal">
+                            Personal Details (Optional, for specific scholarships) <i class="fas fa-star text-warning fa-xs ms-1"></i>
+                        </button>
+                    </h2>
+                    <div id="collapsePersonal" class="accordion-collapse collapse" aria-labelledby="headingPersonal" data-bs-parent="#profileAccordion">
+                        <div class="accordion-body">
+                             <p class="text-danger small"><i class="fas fa-shield-alt me-1"></i> Providing demographic data is optional but can significantly increase matches for identity-based scholarships. This data is handled securely.</p>
+                             <div class="row g-3">
+                                 <div class="col-md-4">
+                                     <label for="profileState" class="form-label form-label-sm">State of Residence</label>
+                                     <input type="text" class="form-control form-control-sm" id="profileState" placeholder="e.g., Colorado" disabled>
+                                 </div>
+                                  <div class="col-md-4">
+                                     <label for="profileCounty" class="form-label form-label-sm">County of Residence (Optional)</label>
+                                     <input type="text" class="form-control form-control-sm" id="profileCounty" placeholder="e.g., Boulder" disabled>
+                                 </div>
+                                 <div class="col-md-4">
+                                      <label for="profileCitizenship" class="form-label form-label-sm">Citizenship Status</label>
+                                      <select id="profileCitizenship" class="form-select form-select-sm" disabled><option selected>Select...</option><option>US Citizen</option><option>Permanent Resident</option><option>International Student (Specify Visa)</option><option>Other</option></select>
+                                 </div>
+                                  <div class="col-md-4">
+                                      <label for="profileEthnicity" class="form-label form-label-sm">Ethnicity (Optional, Select all that apply)</label>
+                                      <select id="profileEthnicity" class="form-select form-select-sm" multiple disabled><option>Select...</option><option>...</option></select>
+                                       <div class="form-check form-check-sm"><input class="form-check-input" type="checkbox" id="ethnicityOptOut" disabled><label class="form-check-label small" for="ethnicityOptOut">Prefer not to say</label></div>
+                                  </div>
+                                  <div class="col-md-4">
+                                       <label for="profileGender" class="form-label form-label-sm">Gender (Optional)</label>
+                                       <select id="profileGender" class="form-select form-select-sm" disabled><option selected>Select...</option><option>...</option><option>Prefer not to say</option><option>Prefer to self-describe</option></select>
+                                  </div>
+                                  <div class="col-md-4 pt-4">
+                                        <div class="form-check form-check-sm"><input class="form-check-input" type="checkbox" id="firstGenCheck" disabled><label class="form-check-label" for="firstGenCheck">First-Generation College Student</label></div>
+                                        <div class="form-check form-check-sm"><input class="form-check-input" type="checkbox" id="disabilityCheck" disabled><label class="form-check-label" for="disabilityCheck">Disability Status (Optional)</label></div>
+                                  </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingActivities">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActivities" aria-expanded="false" aria-controls="collapseActivities">
+                           Activities, Skills & Interests <i class="fas fa-star text-warning fa-xs ms-1"></i>
+                        </button>
+                    </h2>
+                     <div id="collapseActivities" class="accordion-collapse collapse" aria-labelledby="headingActivities" data-bs-parent="#profileAccordion">
+                        <div class="accordion-body">
+                             <div class="mb-3">
+                                 <label for="profileActivities" class="form-label form-label-sm">Extracurricular Activities (Clubs, Sports, Volunteering)</label>
+                                 <textarea class="form-control form-control-sm" id="profileActivities" rows="3" placeholder="List key activities and roles..." disabled></textarea>
+                             </div>
+                              <div class="mb-3">
+                                 <label for="profileTalents" class="form-label form-label-sm">Special Talents (Music, Arts, etc. - Optional)</label>
+                                 <textarea class="form-control form-control-sm" id="profileTalents" rows="2" placeholder="Mention significant talents or hobbies..." disabled></textarea>
+                             </div>
+                             <div class="mb-3">
+                                 <label class="form-label form-label-sm">Key Skills (Syncs from Skills Hub for Premium)</label>
+                                 <div class="p-2 border rounded bg-light-subtle text-muted small">Skills like Python, Leadership, Communication (from Skills Hub) will be used here for matching.</div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingFinancial">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinancial" aria-expanded="false" aria-controls="collapseFinancial">
+                           Financial Context (Optional, for need-based scholarships)
+                        </button>
+                    </h2>
+                      <div id="collapseFinancial" class="accordion-collapse collapse" aria-labelledby="headingFinancial" data-bs-parent="#profileAccordion">
+                         <div class="accordion-body">
+                              <p class="text-danger small"><i class="fas fa-lock me-1"></i> Providing financial context is optional but helps identify need-based aid. This information is treated with high confidentiality.</p>
+                              <div class="row g-3">
+                                   <div class="col-md-6">
+                                       <label for="profileSAI" class="form-label form-label-sm">Estimated Student Aid Index (SAI) / EFC Range (from FAFSA)</label>
+                                       <select id="profileSAI" class="form-select form-select-sm" disabled><option selected>Select range...</option><option>0 - 5000</option><option>5001 - 15000</option><option>...</option><option>Prefer not to say</option></select>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="profileIncome" class="form-label form-label-sm">Estimated Household Income Range</label>
+                                       <select id="profileIncome" class="form-select form-select-sm" disabled><option selected>Select range...</option><option>Under $30,000</option><option>$30,001 - $60,000</option><option>...</option><option>Prefer not to say</option></select>
+                                  </div>
+                              </div>
+                         </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingGoals">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGoals" aria-expanded="false" aria-controls="collapseGoals">
+                           Career Goals & Intended Field
+                        </button>
+                    </h2>
+                    <div id="collapseGoals" class="accordion-collapse collapse" aria-labelledby="headingGoals" data-bs-parent="#profileAccordion">
+                         <div class="accordion-body">
+                              <div class="mb-3">
+                                  <label for="profileCareerGoals" class="form-label form-label-sm">Briefly describe your career goals:</label>
+                                  <textarea class="form-control form-control-sm" id="profileCareerGoals" rows="2" placeholder="e.g., Aspiring software engineer focused on AI..." disabled></textarea>
+                              </div>
+                               <div class="mb-3">
+                                  <label for="profileIndustry" class="form-label form-label-sm">Intended Industry/Field:</label>
+                                  <input type="text" class="form-control form-control-sm" id="profileIndustry" placeholder="e.g., Technology, Healthcare, Education" disabled>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+
+            </div> <div class="text-center mt-4">
+                <button class="btn btn-primary" disabled><i class="fas fa-save me-1"></i>Save Scholarship Profile (Enables Premium Matching)</button>
+             </div>
+
+             <div class="alert alert-secondary small mt-4 d-flex align-items-center">
+                  <i class="fas fa-shield-alt fs-4 me-3"></i>
+                  <div><strong>Your Privacy Matters:</strong> Information provided here is encrypted and used solely to match you with relevant scholarship opportunities. Sensitive data is optional but enhances matching for certain awards. See our <a href="privacy.html" class="alert-link">Privacy Policy</a> for full details.</div>
+              </div>
+
+        </section>
+
+        <hr class="my-5">
+
+        <section id="scholarship-results" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-search-dollar me-2"></i>Step 2: Find Scholarships</h3>
+
+             <div id="freemium-scholarship-view">
+                 <h4>Public Scholarship Databases</h4>
+                 <p>Explore these external databases to conduct your own search (these require creating separate accounts and searching manually):</p>
+                 <div class="list-group list-group-flush mb-4">
+                    <a href="https://fastweb.com/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-external-link-alt fa-fw me-2"></i>Fastweb</a>
+                    <a href="https://www.scholarships.com/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-external-link-alt fa-fw me-2"></i>Scholarships.com</a>
+                     <a href="https://scholarships.collegeboard.org/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-external-link-alt fa-fw me-2"></i>College Board Scholarship Search</a>
+                     <a href="https://studentaid.gov/understand-aid/types/scholarships" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-external-link-alt fa-fw me-2"></i>Federal Student Aid (US Dept. of Ed)</a>
+                     <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-university fa-fw me-2"></i>Your University's Scholarship Portal (Link Placeholder)</a>
+                 </div>
+                 <h5>Example Scholarship Listing:</h5>
+                  <div class="card mb-3 bg-light-subtle border">
+                     <div class="card-body">
+                        <h6 class="card-title">Coca-Cola Scholars Program (Example Only)</h6>
+                        <p class="card-text small mb-1">Provider: The Coca-Cola Company | Amount: $20,000</p>
+                        <p class="card-text small mb-1">Deadline: Late October Annually (Verify)</p>
+                        <p class="card-text small">Highly competitive national scholarship for high school seniors based on academics, leadership, and service.</p>
+                        <a href="#" class="btn btn-sm btn-outline-secondary disabled">Example: Not a Personalized Match</a>
+                    </div>
+                 </div>
+             </div>
+
+             <div id="premium-scholarship-view" class="mt-5 pt-4 border-top border-warning">
+                 <h4 class="text-warning"><i class="fas fa-star me-1"></i>Your AI-Powered Matches (Premium)</h4>
+                 <p class="text-muted small">Based on your saved profile, here are scholarships you might be eligible for. We scan for new opportunities and update your matches weekly (up to 5-10 new matches notified via email/dashboard).</p>
+                 <div class="d-flex flex-wrap gap-2 mb-3">
+                    <button class="btn btn-sm btn-outline-secondary disabled">Sort by Deadline <i class="fas fa-sort ms-1"></i></button>
+                    <button class="btn btn-sm btn-outline-secondary disabled">Filter by Amount <i class="fas fa-filter ms-1"></i></button>
+                    <button class="btn btn-sm btn-outline-secondary disabled">Filter by Match <i class="fas fa-percentage ms-1"></i></button>
+                 </div>
+
+                 <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Future Leaders in Technology Scholarship</h5>
+                                <p class="card-text small mb-1 text-muted">Provider: TechCorp Foundation | Amount: $10,000</p>
+                                <p class="card-text small mb-2"><strong>Deadline: Oct 31, 2025</strong></p>
+                                <p class="card-text small mb-2"><strong>AI Match Insight:</strong> <span class="badge bg-success">95% Match</span> - Strong fit for Major (CS), GPA (&gt;3.8), Stated Career Goal (Software Dev).</p>
+                                <p class="card-text small flex-grow-1"><strong>Eligibility Snippet:</strong> Open to Junior/Senior STEM majors demonstrating leadership potential. Requires essay and recommendations...</p>
+                                <div class="mt-auto text-end">
+                                    <a href="#" class="btn btn-sm btn-outline-primary me-1">View Details</a>
+                                    <button class="btn btn-sm btn-outline-secondary" disabled><i class="far fa-bookmark me-1"></i>Save to Tracker</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6">
+                         <div class="card h-100 shadow-sm">
+                              <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Colorado First-Generation Grant</h5>
+                                <p class="card-text small mb-1 text-muted">Provider: CO Education Fund | Amount: $2,500</p>
+                                <p class="card-text small mb-2"><strong>Deadline: Dec 15, 2025</strong></p>
+                                <p class="card-text small mb-2"><strong>AI Match Insight:</strong> <span class="badge bg-success">88% Match</span> - Fits Residency (CO), First-Generation Status, Financial Need (based on profile).</p>
+                                <p class="card-text small flex-grow-1"><strong>Eligibility Snippet:</strong> For Colorado residents who are first-generation college students with demonstrated financial need...</p>
+                                <div class="mt-auto text-end">
+                                    <a href="#" class="btn btn-sm btn-outline-primary me-1">View Details</a>
+                                    <button class="btn btn-sm btn-outline-secondary" disabled><i class="far fa-bookmark me-1"></i>Save to Tracker</button>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                     </div>
+              </div>
+        </section>
+
+         <hr class="my-5">
+
+        <section id="scholarship-tracker" class="mb-5">
+            <div class="p-4 border border-warning rounded bg-light">
+                <h3 class="text-warning mb-3"><i class="fas fa-star me-1"></i><i class="fas fa-clipboard-list me-2"></i>Step 3: Track Your Applications (Premium)</h3>
+                <p class="text-muted small">Save scholarships from your matches and track your application progress here.</p>
+                 <div class="table-responsive">
+                    <table class="table table-sm table-hover small">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Scholarship Name</th>
+                                <th>Deadline</th>
+                                <th>Status</th>
+                                <th>Requirements Notes</th>
+                                <th>My Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td>Future Leaders in Technology</td>
+                                <td>Oct 31, 2025</td>
+                                <td><span class="badge bg-warning text-dark">In Progress</span></td> <td>Essay, Transcript, 2 Refs</td>
+                                <td><textarea class="form-control form-control-sm" rows="1" placeholder="Need to request refs from Prof. X & Y" disabled></textarea></td>
+                            </tr>
+                             <tr>
+                                <td>Colorado First-Generation Grant</td>
+                                <td>Dec 15, 2025</td>
+                                <td><span class="badge bg-secondary">Not Started</span></td>
+                                <td>App Form, Short Answer</td>
+                                 <td><textarea class="form-control form-control-sm" rows="1" placeholder="Add notes..." disabled></textarea></td>
+                            </tr>
+                              <tr>
+                                <td>Community Service Award</td>
+                                <td>Nov 01, 2025</td>
+                                <td><span class="badge bg-success">Submitted</span></td>
+                                 <td>Essay, Volunteer Log</td>
+                                 <td><textarea class="form-control form-control-sm" rows="1" placeholder="Submitted on Oct 28th" disabled></textarea></td>
+                            </tr>
+                             </tbody>
+                    </table>
+                </div>
+                 <div class="text-end mt-2">
+                     <button class="btn btn-sm btn-outline-secondary me-1" disabled>View Saved Scholarships</button>
+                     <button class="btn btn-sm btn-outline-secondary" disabled>Export List</button>
+                 </div>
+            </div>
+        </section>
+
+         <section id="essay-assist" class="mb-5">
+             <div class="card card-body bg-light-subtle border-warning">
+                <h4 class="text-warning"><i class="fas fa-star me-1"></i><i class="fas fa-feather-alt me-2"></i>Need Help with Essays? (Premium Add-on)</h4>
+                <p class="small mb-2">Our AI can help you brainstorm topics based on prompts and provide basic feedback on grammar and structure for your scholarship essays.</p>
+                <div class="text-start">
+                    <button class="btn btn-sm btn-outline-warning" disabled>Get AI Essay Review</button>
+                </div>
+             </div>
+         </section>
+
+         <section id="premium-scholarship-features" class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>Maximize Your Funding with Premium</h2>
+            <div class="row g-3 text-center">
+                <div class="col-md col-lg">
+                     <i class="fas fa-robot fa-2x text-primary mb-2"></i>
+                    <h6>AI Personalized Matching</h6>
+                    <p class="small text-muted">Find relevant awards based on your detailed profile.</p>
+                </div>
+                 <div class="col-md col-lg">
+                      <i class="fas fa-bell fa-2x text-success mb-2"></i>
+                     <h6>Weekly Match Alerts</h6>
+                     <p class="small text-muted">Stay updated on new opportunities effortlessly via email/dashboard.</p>
+                 </div>
+                <div class="col-md col-lg">
+                     <i class="fas fa-tasks fa-2x text-info mb-2"></i>
+                    <h6>Application Tracker</h6>
+                    <p class="small text-muted">Organize deadlines, requirements, and notes in one place.</p>
+                </div>
+                 <div class="col-md col-lg">
+                     <i class="fas fa-edit fa-2x text-danger mb-2"></i>
+                    <h6>AI Essay Tools (Add-on)</h6>
+                    <p class="small text-muted">Brainstorming and basic feedback for stronger essays.</p>
+                 </div>
+                 <div class="col-md col-lg">
+                      <i class="fas fa-filter fa-2x text-secondary mb-2"></i>
+                     <h6>Saved Searches & Filters</h6>
+                     <p class="small text-muted">Streamline your search process and refine results easily.</p>
+                 </div>
+            </div>
+            <div class="text-center mt-3">
+                 <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade for Full Access</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white mt-auto">
+         <div class="container text-center">
+            <small>Copyright &copy; EducAtIon Advisor <span id="current-year"></span></small>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-white-50 me-2">Privacy Policy</a>
+                <span class="text-white-50">|</span>
+                <a href="terms.html" class="text-white-50 ms-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="premiumModal" tabindex="-1" aria-labelledby="premiumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="premiumModalLabel"><i class="fas fa-star me-2"></i>EducAtIon Advisor Premium Features</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Upgrade to unlock powerful tools designed to maximize your success:</p>
+             <ul>
+              <li><strong>Unlimited AI Advisor Access:</strong> Get personalized, context-aware advice 24/7 based on your academic plan.</li>
+              <li><strong>Automated Scholarship Matching:</strong> Let our AI find relevant scholarships based on your complete profile, with weekly alerts.</li> <li><strong>Advanced Academic Planning:</strong> Run "What-If" scenarios, optimize course sequences, and get proactive alerts.</li>
+              <li><strong>AI-Powered Study Tools & Skill Paths:</strong> Generate summaries, flashcards, personalized learning sequences, and get deeper insights from your course materials.</li>
+              <li><strong>Enhanced Career Tools & Integrated Tracking:</strong> AI resume feedback & assist, personalized job matching & fit scores, interview prep simulator, and automated skill progress tracking.</li>
+               <li><strong>Scholarship Application Tracker:</strong> Organize and manage your scholarship applications efficiently.</li> <li><strong>And much more!</strong></li>
+            </ul>
+            <p>Invest in your future and navigate college with confidence.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+            <a href="#" class="btn btn-warning">Upgrade Now!</a> </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Ensure this only runs once
+        if (!window.footerYearUpdated) {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            window.footerYearUpdated = true;
+        }
+    </script>
+
+    </body>
+</html>

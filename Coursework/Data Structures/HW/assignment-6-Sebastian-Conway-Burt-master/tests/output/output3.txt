@@ -1,0 +1,62 @@
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Show: Adventure Time 8.5
+Show: Big Little Lies 8.5
+Show: Berserk 8.5
+Show: Dark 8.5
+Show: John Adams 8.5
+Show: Homicide: Life on the Street 8.5
+Show: Mystery Science Theater 3000 8.5
+Show: Louie 8.5
+Show: The Punisher 8.5
+Show: The Eric Andre Show 8.5
+Show: The Night Of 8.5
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Berserk
+Homicide: Life on the Street
+Louie
+The Night Of
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Enter the show rating to count:
+Number of PG-13: 2
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Enter title:
+Show Info:
+==================
+Title :Berserk
+Year :2004
+Show Rating :R
+User Rating :8.5
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Goodbye!
+
+[GRADER] No leaked memory (Good).

@@ -1,0 +1,92 @@
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Show: Dekalog 9
+Show: Batman: The Animated Series 8.9
+Show: Africa 8.8
+Show: Death Note 8.9
+Show: Cowboy Bebop 8.9
+Show: Black Mirror 8.9
+Show: The Civil War 9
+Show: Firefly 9
+Show: Fargo 8.9
+Show: Fullmetal Alchemist: Brotherhood 9
+Show: Frozen Planet 8.8
+Show: Last Week Tonight with John Oliver 8.9
+Show: The Blue Planet 8.9
+Show: One Punch Man 8.8
+Show: Monty Python's Flying Circus 8.8
+Show: True Detective 9
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Enter a show title:
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Show: Dekalog 9
+Show: Batman: The Animated Series 8.9
+Show: Africa 8.8
+Show: Death Note 8.9
+Show: Cowboy Bebop 8.9
+Show: Black Mirror 8.9
+Show: The Civil War 9
+Show: Frozen Planet 8.8
+Show: Fargo 8.9
+Show: Fullmetal Alchemist: Brotherhood 9
+Show: Last Week Tonight with John Oliver 8.9
+Show: The Blue Planet 8.9
+Show: One Punch Man 8.8
+Show: Monty Python's Flying Circus 8.8
+Show: True Detective 9
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Enter a show title:
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Enter a show title:
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Show: The Civil War 9
+Show: Dekalog 9
+Show: Batman: The Animated Series 8.9
+Show: Africa 8.8
+Show: Cowboy Bebop 8.9
+Show: Black Mirror 8.9
+Show: Death Note 8.9
+Show: Frozen Planet 8.8
+Show: Fargo 8.9
+Show: Fullmetal Alchemist: Brotherhood 9
+Show: Last Week Tonight with John Oliver 8.9
+Show: The Blue Planet 8.9
+Show: One Punch Man 8.8
+Show: Monty Python's Flying Circus 8.8
+Show: True Detective 9
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Goodbye!

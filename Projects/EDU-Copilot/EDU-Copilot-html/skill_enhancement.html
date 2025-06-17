@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Enhancement - EducAtIon Advisor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .skill-cloud span {
+            /* Example: add slight variation or ensure padding */
+            padding: 0.4em 0.7em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/edu-copilot-logo.jpg" alt="EducAtIon Advisor Logo" class="navbar-logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic_planning.html">Academic Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_assistance.html">Class Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="skill_enhancement.html">Skills</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="advisor_connect.html">Advisor AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career_launchpad.html">Career</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="scholarship_engine.html">Scholarships</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="milestone_tracker.html">Milestones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item me-2">
+                         <a href="profile_settings.html" class="nav-link" title="Profile & Settings"><i class="fas fa-user-circle fs-5"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                            <i class="fas fa-star me-1"></i>Upgrade to Premium
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-4 bg-light border-bottom mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Skill Enhancement Hub</h1>
+            <p class="text-muted">Identify, develop, and track valuable skills for your academic and career journey.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+
+        <section id="my-skills" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-user-tag me-2"></i>My Skills Profile</h3>
+             <div class="card card-body bg-light mb-3">
+                 <label for="addSkillInput" class="form-label form-label-sm">Add a skill you have or want to learn:</label>
+                 <div class="input-group input-group-sm">
+                     <input type="text" class="form-control" id="addSkillInput" placeholder="e.g., Python, Leadership, Data Analysis..." disabled>
+                     <button class="btn btn-outline-primary" type="button" disabled><i class="fas fa-plus me-1"></i>Add Skill</button>
+                 </div>
+                 <p class="text-muted small mt-2 mb-0">Premium uses AI to suggest relevant skills based on your courses and career goals.</p>
+             </div>
+
+            <h6>Your Skills (Example):</h6>
+            <div class="skill-cloud p-3 border rounded">
+                 <span class="badge bg-primary me-1 mb-1 fs-6">Python <span class="badge bg-light text-dark ms-1">Intermediate</span></span>
+                 <span class="badge bg-secondary me-1 mb-1 fs-6">Project Management <span class="badge bg-light text-dark ms-1">Beginner</span></span>
+                 <span class="badge bg-success me-1 mb-1 fs-6">Public Speaking <span class="badge bg-light text-dark ms-1">Intermediate</span></span>
+                 <span class="badge bg-danger me-1 mb-1 fs-6">Java <span class="badge bg-light text-dark ms-1">Beginner</span></span>
+                 <span class="badge bg-warning text-dark me-1 mb-1 fs-6">Team Leadership <span class="badge bg-light text-dark ms-1">Beginner</span></span>
+                 <span class="badge bg-info me-1 mb-1 fs-6">Data Visualization <span class="badge bg-light text-dark ms-1">Beginner</span></span>
+                  <span class="badge bg-dark me-1 mb-1 fs-6">Git & GitHub <span class="badge bg-light text-dark ms-1">Intermediate</span></span>
+                 <span class="badge bg-primary me-1 mb-1 fs-6">SQL <span class="badge bg-light text-dark ms-1">Beginner</span></span>
+                 <span class="badge bg-secondary me-1 mb-1 fs-6">Time Management <span class="badge bg-light text-dark ms-1">Advanced</span></span>
+                 </div>
+        </section>
+
+        <section id="discover-resources" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-search me-2"></i>Discover Learning Resources</h3>
+              <input type="text" class="form-control mb-3" placeholder="Search resources by skill or topic (e.g., 'Java Basics', 'Time Management')..." disabled>
+              <div class="row g-4 mt-2">
+                 <div class="col-md-6">
+                     <div class="card h-100">
+                         <div class="card-header">Featured Free Resources</div>
+                         <div class="list-group list-group-flush small">
+                             <a href="#" class="list-group-item list-group-item-action">
+                                 <img src="images/khan-academy-logo.png" height="20" alt="Khan Academy" class="me-2 align-middle"> Khan Academy - Intro to SQL: Querying and managing data
+                             </a>
+                              <a href="#" class="list-group-item list-group-item-action">
+                                 <img src="images/coursera-logo.png" height="20" alt="Coursera" class="me-2 align-middle"> Coursera - Free Course: Learning How to Learn
+                             </a>
+                              <a href="#" class="list-group-item list-group-item-action">
+                                 <img src="images/edx-logo.png" height="20" alt="edX" class="me-2 align-middle"> edX - Free Course: CS50's Introduction to Computer Science
+                             </a>
+                               <a href="#" class="list-group-item list-group-item-action">
+                                 <img src="images/youtube-logo.png" height="20" alt="YouTube" class="me-2 align-middle"> YouTube - Crash Course: Public Speaking Fundamentals
+                             </a>
+                              <a href="#" class="list-group-item list-group-item-action">
+                                 <i class="fab fa-github fa-fw me-2 fs-5 align-middle"></i> GitHub Learning Lab (Interactive Tutorials)
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-md-6">
+                    <div class="card h-100 border-warning bg-light shadow-sm">
+                        <div class="card-header text-warning fw-bold"><i class="fas fa-star me-1"></i>AI Recommended Resources (Premium)</div>
+                        <div class="card-body small">
+                             <p class="card-text text-muted">Upgrade for personalized recommendations based on your profile, including premium courses:</p>
+                             <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-lock text-muted me-2"></i>
+                                    <img src="images/udemy-logo.png" height="18" alt="Udemy" class="me-1 align-middle"> Complete Python Developer in 2025 (Udemy)
+                                </li>
+                                 <li class="mb-2">
+                                    <i class="fas fa-lock text-muted me-2"></i>
+                                    <img src="images/linkedin-learning-logo.png" height="18" alt="LinkedIn Learning" class="me-1 align-middle"> Project Management Foundations (LinkedIn Learning)
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-lock text-muted me-2"></i>
+                                     <img src="images/coursera-logo.png" height="18" alt="Coursera" class="me-1 align-middle"> Google Data Analytics Professional Certificate (Coursera)
+                                </li>
+                                 <li class="mb-2">
+                                    <i class="fas fa-lock text-muted me-2"></i>
+                                     <img src="images/skillshare-logo.png" height="18" alt="Skillshare" class="me-1 align-middle"> Graphic Design Basics: Core Principles (Skillshare)
+                                </li>
+                            </ul>
+                             <button class="btn btn-sm btn-warning mt-2" data-bs-toggle="modal" data-bs-target="#premiumModal">Unlock Recommendations</button>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             <p class="text-center mt-2 small text-muted">You need to create an `images` folder in your project and add placeholder logo files for the resource links.</p>
+        </section>
+
+         <section id="learning-journey" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-chart-line me-2"></i>My Learning Journey</h3>
+              <div class="row g-4">
+                 <div class="col-md-6">
+                     <div class="card h-100">
+                         <div class="card-header">Manually Tracked Resources</div>
+                         <div class="list-group list-group-flush small">
+                             <div class="list-group-item d-flex justify-content-between align-items-center">
+                                 <span>Khan Academy - Intro to SQL</span>
+                                 <div>
+                                     <span class="badge bg-info me-2">In Progress</span>
+                                     <button class="btn btn-sm btn-outline-success py-0" disabled>Mark Complete</button>
+                                 </div>
+                             </div>
+                             <div class="list-group-item d-flex justify-content-between align-items-center">
+                                 <span>YouTube - Public Speaking Tips</span>
+                                 <div>
+                                     <span class="badge bg-success me-2">Completed</span>
+                                     <button class="btn btn-sm btn-outline-secondary py-0" disabled>Review</button>
+                                 </div>
+                             </div>
+                             <div class="list-group-item d-flex justify-content-between align-items-center">
+                                 <span>GitHub Learning Lab - Intro to GitHub</span>
+                                  <div>
+                                     <span class="badge bg-secondary me-2">Not Started</span>
+                                     <button class="btn btn-sm btn-outline-primary py-0" disabled>Start</button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="card-footer text-center">
+                            <button class="btn btn-sm btn-outline-primary" disabled><i class="fas fa-plus me-1"></i>Add Manual Entry</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-md-6">
+                     <div class="card h-100 border-warning bg-light">
+                         <div class="card-header text-warning fw-bold"><i class="fas fa-star me-1"></i>Premium Learning Tools</div>
+                         <div class="card-body small">
+                             <h6><i class="fas fa-route text-muted me-1"></i> Personalized Learning Paths</h6>
+                             <div class="p-2 border rounded bg-white mb-3">
+                                <small><strong>Example Path:</strong> Data Analysis Basics</small>
+                                <ul class="list-unstyled mb-0 ps-3 small">
+                                     <li><i class="fas fa-lock text-muted me-1"></i>1. Learn SQL (Coursera)</li>
+                                     <li><i class="fas fa-lock text-muted me-1"></i>2. Python Fundamentals (Udemy)</li>
+                                     <li><i class="fas fa-lock text-muted me-1"></i>3. Data Viz w/ Tableau (Article)</li>
+                                </ul>
+                             </div>
+                              <h6><i class="fas fa-sync-alt text-muted me-1"></i> Automated Progress Tracking</h6>
+                              <p class="text-muted mb-2">Connect accounts to auto-sync progress:</p>
+                             <div class="mb-3">
+                                <button class="btn btn-sm btn-outline-secondary me-2" disabled><img src="images/udemy-logo.png" height="16" class="me-1"> Connect Udemy</button>
+                                <button class="btn btn-sm btn-outline-secondary" disabled><img src="images/coursera-logo.png" height="16" class="me-1"> Connect Coursera</button>
+                                </div>
+                             <h6><i class="fas fa-certificate text-muted me-1"></i> Certification Management</h6>
+                             <ul class="list-group list-group-sm mb-2">
+                                 <li class="list-group-item text-muted text-center">No certifications added yet.</li>
+                                 </ul>
+                             <button class="btn btn-sm btn-outline-secondary" disabled><i class="fas fa-plus me-1"></i>Add Certification</button>
+                         </div>
+                          <div class="card-footer text-center">
+                            <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#premiumModal">Unlock Premium Tools</button>
+                          </div>
+                     </div>
+                 </div>
+              </div>
+        </section>
+
+         <section id="connect-skills" class="mb-5 p-4 bg-info-subtle rounded">
+            <h3 class="mb-3"><i class="fas fa-link me-2"></i>Connect Skills to Opportunities</h3>
+             <p class="lead">See how the skills you're building connect to potential career paths and enhance your academic profile.</p>
+             <h6>Example Connections:</h6>
+             <ul>
+                 <li><strong>Technical Skills (Python, SQL, Data Visualization):</strong> Lead to roles like Data Analyst, Business Intelligence Analyst, Software Engineer.</li>
+                 <li><strong>Project Management & Communication:</strong> Valuable for Team Lead roles, Research Coordination, Event Planning.</li>
+                 <li><strong>Creative Skills (Graphic Design, Writing):</strong> Applicable in Marketing, UI/UX Design, Content Creation.</li>
+             </ul>
+             <a href="career_launchpad.html" class="btn btn-primary"><i class="fas fa-briefcase me-1"></i>Explore Related Careers</a>
+        </section>
+
+        <section id="premium-skills-features" class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>Accelerate Your Skill Development with Premium</h2>
+             <div class="row g-3 text-center">
+                <div class="col-md col-lg">
+                    <div class="p-2">
+                        <i class="fas fa-search-plus fa-2x text-primary mb-2"></i>
+                        <h6>AI Skill Gap Analysis</h6>
+                        <p class="small text-muted">Identify skills needed for your academic and career goals.</p>
+                    </div>
+                </div>
+                 <div class="col-md col-lg">
+                    <div class="p-2">
+                         <i class="fas fa-route fa-2x text-success mb-2"></i>
+                        <h6>Personalized Learning Paths</h6>
+                        <p class="small text-muted">AI-curated sequences using free and premium resources.</p>
+                    </div>
+                </div>
+                 <div class="col-md col-lg">
+                    <div class="p-2">
+                         <i class="fas fa-sync-alt fa-2x text-info mb-2"></i>
+                        <h6>Integrated Progress Tracking</h6>
+                        <p class="small text-muted">Auto-sync course progress from connected platforms.</p>
+                    </div>
+                </div>
+                 <div class="col-md col-lg">
+                    <div class="p-2">
+                         <i class="fas fa-certificate fa-2x text-danger mb-2"></i>
+                        <h6>Certification Management</h6>
+                        <p class="small text-muted">Keep track of your completed certifications and credentials.</p>
+                    </div>
+                </div>
+                 <div class="col-md col-lg">
+                    <div class="p-2">
+                         <i class="fas fa-book-reader fa-2x text-secondary mb-2"></i>
+                        <h6>Premium Content Access</h6>
+                        <p class="small text-muted">Get recommendations for courses from Udemy, LinkedIn Learning, etc.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-3">
+                 <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Premium</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white mt-auto">
+         <div class="container text-center">
+            <small>Copyright &copy; EducAtIon Advisor <span id="current-year"></span></small>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-white-50 me-2">Privacy Policy</a>
+                <span class="text-white-50">|</span>
+                <a href="terms.html" class="text-white-50 ms-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="premiumModal" tabindex="-1" aria-labelledby="premiumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="premiumModalLabel"><i class="fas fa-star me-2"></i>EducAtIon Advisor Premium Features</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Upgrade to unlock powerful tools designed to maximize your success:</p>
+            <ul>
+              <li><strong>Unlimited AI Advisor Access:</strong> Get personalized, context-aware advice 24/7 based on your academic plan.</li>
+              <li><strong>Automated Scholarship Matching:</strong> Let our AI find relevant scholarships based on your complete profile.</li>
+              <li><strong>Advanced Academic Planning:</strong> Run "What-If" scenarios, optimize course sequences, and get proactive alerts.</li>
+              <li><strong>AI-Powered Study Tools & Skill Paths:</strong> Generate summaries, flashcards, personalized learning sequences, and get deeper insights from your course materials.</li>
+              <li><strong>Enhanced Career Tools & Integrated Tracking:</strong> AI resume feedback, personalized job matching, interview prep, and automated skill progress tracking.</li>
+              <li><strong>And much more!</strong></li>
+            </ul>
+            <p>Invest in your future and navigate college with confidence.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+            <a href="#" class="btn btn-warning">Upgrade Now!</a> </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Ensure this only runs once
+        if (!window.footerYearUpdated) {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            window.footerYearUpdated = true;
+        }
+    </script>
+
+    </body>
+</html>

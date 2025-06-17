@@ -1,0 +1,399 @@
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Enter the show rating to count:
+Number of PG-13: 75
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Enter the title character:
+Shows that starts with D:
+Dekalog(1950) 9
+Death Note(1977) 8.9
+Das Boot(1968) 8.8
+Daredevil(1957) 8.6
+Dark(2005) 8.5
+Deadwood(1979) 8.7
+Dragon Ball Z(1988) 8.7
+Downton Abbey(1999) 8.6
+Dexter(1997) 8.6
+Detectorists(1957) 8.5
+Doctor Who(2000) 8.4
+Dragon Ball(2006) 8.5
+Dr. Horrible's Sing-Along Blog(1997) 8.5
+Dragon Ball Z: Doragon bôru zetto(2006) 8.7
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Show: Planet Earth II 9.5
+Show: Band of Brothers 9.4
+Show: Avatar: The Last Airbender 9.1
+Show: Africa 8.8
+Show: Adventure Time 8.5
+Show: Apocalypse: La 2ème guerre mondiale 8.8
+Show: Alfred Hitchcock Presents 8.5
+Show: After Life 8.4
+Show: American Crime Story 8.5
+Show: Arrested Development 8.8
+Show: Archer 8.6
+Show: Attack on Titan 8.7
+Show: Atlanta 8.6
+Show: Ash vs Evil Dead 8.5
+Show: Game of Thrones 9.4
+Show: Breaking Bad 9.4
+Show: Blue Planet II 9.2
+Show: Batman: The Animated Series 8.9
+Show: Black Mirror 8.9
+Show: Better Call Saul 8.6
+Show: Battlestar Galactica 8.6
+Show: Berserk 8.5
+Show: Behzat Ç.: Bir Ankara Polisiyesi 8.4
+Show: Big Little Lies 8.5
+Show: Black Books 8.5
+Show: Billions 8.3
+Show: Blackadder Goes Forth 8.7
+Show: Blackadder II 8.6
+Show: Blackadder the Third 8.6
+Show: Brass Eye 8.5
+Show: Boardwalk Empire 8.5
+Show: BoJack Horseman 8.5
+Show: Boku dake ga inai machi 8.5
+Show: Borgen 8.4
+Show: Cosmos 9.2
+Show: Chernobyl 9.1
+Show: Chappelle's Show 8.7
+Show: Bron/Broen 8.6
+Show: Brideshead Revisited 8.5
+Show: Carnivàle 8.4
+Show: Brooklyn Nine-Nine 8.3
+Show: Chef's Table 8.6
+Show: Cobra Kai 8.7
+Show: Community 8.5
+Show: Dekalog 9
+Show: Death Note 8.9
+Show: Cowboy Bebop 8.9
+Show: Coupling 8.5
+Show: Das Boot 8.8
+Show: Curb Your Enthusiasm 8.7
+Show: Daredevil 8.6
+Show: Dark 8.5
+Show: Deadwood 8.7
+Show: Firefly 9
+Show: Fargo 8.9
+Show: Dragon Ball Z 8.7
+Show: Downton Abbey 8.6
+Show: Dexter 8.6
+Show: Detectorists 8.5
+Show: Doctor Who 8.4
+Show: Dragon Ball 8.5
+Show: Dr. Horrible's Sing-Along Blog 8.5
+Show: Dragon Ball Z: Doragon bôru zetto 8.7
+Show: Endeavour 8.5
+Show: Entourage 8.4
+Show: Fawlty Towers 8.8
+Show: Father Ted 8.6
+Show: Feud 8.5
+Show: Fullmetal Alchemist: Brotherhood 9
+Show: Frozen Planet 8.8
+Show: Friends 8.8
+Show: Freaks and Geeks 8.8
+Show: Flight of the Conchords 8.5
+Show: Fleabag 8.3
+Show: Friday Night Lights 8.6
+Show: From the Earth to the Moon 8.6
+Show: Fringe 8.3
+Show: Fullmetal Alchemist 8.6
+Show: Futurama 8.5
+Show: Planet Earth 9.4
+Show: Our Planet 9.3
+Show: Life 9.1
+Show: Human Planet 9
+Show: Gravity Falls 8.8
+Show: Gomorra: La serie 8.6
+Show: Generation Kill 8.5
+Show: Garth Marenghi's Darkplace 8.4
+Show: Generation War 8.4
+Show: House of Cards 8.8
+Show: House M.D. 8.7
+Show: Homicide: Life on the Street 8.5
+Show: Hannibal 8.5
+Show: Happy Valley 8.4
+Show: Horace and Pete 8.5
+Show: Last Week Tonight with John Oliver 8.9
+Show: Justice League Unlimited 8.7
+Show: It's Always Sunny in Philadelphia 8.7
+Show: Hunter x Hunter 8.6
+Show: Impractical Jokers 8.5
+Show: I'm Alan Partridge 8.5
+Show: Inside No. 9 8.4
+Show: Inside Look: The People v. O.J. Simpson - American Crime Story 8.4
+Show: Justice League 8.5
+Show: John Adams 8.5
+Show: Jesus of Nazareth 8.5
+Show: Jeeves and Wooster 8.3
+Show: Kôdo giasu: Hangyaku no rurûshu 8.6
+Show: Justified 8.5
+Show: Kardes Payi 8.3
+Show: Kôkaku kidôtai: Stand Alone Complex 8.5
+Show: Leyla ile Mecnun 8.6
+Show: One Punch Man 8.8
+Show: Monty Python's Flying Circus 8.8
+Show: Mahabharat 8.8
+Show: Lonesome Dove 8.7
+Show: Line of Duty 8.5
+Show: Long Way Round 8.6
+Show: Mad Men 8.6
+Show: Louie 8.5
+Show: Luther 8.5
+Show: Monster 8.6
+Show: Making a Murderer 8.6
+Show: Mind Your Language 8.6
+Show: Masum 8.5
+Show: Mister Rogers' Neighborhood 8.6
+Show: Mindhunter 8.5
+Show: Money Heist 8.5
+Show: Modern Family 8.4
+Show: Narcos 8.8
+Show: Mystery Science Theater 3000 8.5
+Show: Mr. Bean 8.5
+Show: Mr. Robot 8.5
+Show: Nathan for You 8.7
+Show: Narcos: Mexico 8.4
+Show: North &amp; South 8.6
+Show: One Piece: Wan pîsu 8.4
+Show: Only Fools and Horses.... 8.8
+Show: Over the Garden Wall 8.8
+Show: Peaky Blinders 8.7
+Show: Oz 8.7
+Show: Parks and Recreation 8.6
+Show: Peep Show 8.6
+Show: Permanent Roommates 8.3
+Show: The Wire 9.3
+Show: Rick and Morty 9.2
+Show: Pride and Prejudice 8.8
+Show: Poirot 8.5
+Show: Police Squad! 8.4
+Show: Pose 8.3
+Show: QI 8.6
+Show: Queer Eye 8.3
+Show: The Sopranos 9.1
+Show: Sherlock 9.1
+Show: Seinfeld 8.8
+Show: Sahsiyet 8.7
+Show: Rome 8.7
+Show: Sacred Games 8.6
+Show: Rurouni Kenshin: Wandering Samurai 8.4
+Show: Samurai X: Trust and Betrayal 8.6
+Show: Samurai Champloo 8.5
+Show: Samurai Jack 8.4
+Show: Scenes from a Marriage 8.4
+Show: Shameless 8.6
+Show: Seinto Seiya 8.5
+Show: Sex Education 8.3
+Show: The Civil War 9
+Show: The Blue Planet 8.9
+Show: Stranger Things 8.8
+Show: South Park 8.7
+Show: Six Feet Under 8.6
+Show: Shin Seiki Evangerion 8.5
+Show: Silicon Valley 8.5
+Show: Skam 8.6
+Show: Sons of Anarchy 8.5
+Show: Steins;Gate 8.7
+Show: Star Trek: The Next Generation 8.6
+Show: Spaced 8.6
+Show: Sseulsseulhago Chalranhashin: Dokkaebi 8.5
+Show: Spartacus: Gods of the Arena 8.5
+Show: Spartacus 8.5
+Show: State of Play 8.4
+Show: TVF Pitchers 8.8
+Show: Suits 8.4
+Show: The Adventures of Sherlock Holmes 8.7
+Show: Taboo 8.4
+Show: The Angry Video Game Nerd 8.4
+Show: The Americans 8.3
+Show: The Bugs Bunny Show 8.6
+Show: The Bugs Bunny/Looney Tunes Comedy Hour 8.4
+Show: The Simpsons 8.7
+Show: The Marvelous Mrs. Maisel 8.7
+Show: The Haunting of Hill House 8.7
+Show: The Crown 8.6
+Show: The Colbert Report 8.4
+Show: The Grand Tour 8.6
+Show: The Defiant Ones 8.5
+Show: The Daily Show 8.4
+Show: The Eric Andre Show 8.5
+Show: The Expanse 8.3
+Show: The Handmaid's Tale 8.5
+Show: The Jinx: The Life and Deaths of Robert Durst 8.7
+Show: The IT Crowd 8.5
+Show: The Knick 8.5
+Show: The Legend of Korra 8.4
+Show: The Return of Sherlock Holmes 8.6
+Show: The Memoirs of Sherlock Holmes 8.6
+Show: The Newsroom 8.5
+Show: The New Batman Adventures 8.5
+Show: The Muppet Show 8.4
+Show: The Punisher 8.5
+Show: The Night Of 8.5
+Show: The Office 8.5
+Show: The Prisoner 8.5
+Show: The Shield 8.6
+Show: The Vietnam War 9
+Show: The Twilight Zone 9
+Show: The Thick of It 8.6
+Show: The Untold History of the United States 8.5
+Show: The Venture Bros. 8.4
+Show: The West Wing 8.7
+Show: The World at War 9.1
+Show: True Detective 9
+Show: The X-Files 8.6
+Show: Top Gear 8.6
+Show: This Is Us 8.6
+Show: This Is England '90 8.5
+Show: Through the Wormhole 8.6
+Show: Tinker Tailor Soldier Spy 8.5
+Show: Twin Peaks 8.8
+Show: Westworld 8.8
+Show: Vikings 8.5
+Show: Umbre 8.5
+Show: Utopia 8.4
+Show: Wentworth 8.5
+Show: Violet Evergarden 8.3
+Show: Young Justice 8.6
+Show: Yes Minister 8.5
+Show: Yeh Meri Family 8.5
+Show: Whose Line Is It Anyway? 8.5
+Show: X-Men: The Animated Series 8.4
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Adventure Time
+After Life
+American Crime Story
+Archer
+Ash vs Evil Dead
+Behzat Ç.: Bir Ankara Polisiyesi
+Billions
+Blackadder the Third
+BoJack Horseman
+Borgen
+Brideshead Revisited
+Brooklyn Nine-Nine
+Chef's Table
+Community
+Coupling
+Dark
+Deadwood
+Detectorists
+Doctor Who
+Dr. Horrible's Sing-Along Blog
+Entourage
+Father Ted
+Feud
+Fleabag
+Friday Night Lights
+Fringe
+Fullmetal Alchemist
+Futurama
+Garth Marenghi's Darkplace
+Generation War
+Happy Valley
+Horace and Pete
+I'm Alan Partridge
+Inside Look: The People v. O.J. Simpson - American Crime Story
+Jeeves and Wooster
+Kardes Payi
+Kôkaku kidôtai: Stand Alone Complex
+Leyla ile Mecnun
+Line of Duty
+Luther
+Masum
+Mindhunter
+Modern Family
+Mr. Robot
+Narcos: Mexico
+One Piece: Wan pîsu
+Only Fools and Horses....
+Parks and Recreation
+Permanent Roommates
+Pose
+Queer Eye
+Rurouni Kenshin: Wandering Samurai
+Samurai Jack
+Scenes from a Marriage
+Sex Education
+Silicon Valley
+Sons of Anarchy
+Spartacus
+State of Play
+Suits
+Taboo
+The Americans
+The Bugs Bunny/Looney Tunes Comedy Hour
+The Colbert Report
+The Daily Show
+The Expanse
+The Handmaid's Tale
+The IT Crowd
+The Legend of Korra
+The Muppet Show
+The Prisoner
+The Shield
+The Thick of It
+The Venture Bros.
+The West Wing
+This Is England '90
+Tinker Tailor Soldier Spy
+Utopia
+Violet Evergarden
+X-Men: The Animated Series
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Enter the show rating to count:
+Number of R: 85
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Enter title:
+Show Info:
+==================
+Title :Africa
+Year :1974
+Show Rating :R
+User Rating :8.8
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Goodbye!
+
+[GRADER] No leaked memory (Good).

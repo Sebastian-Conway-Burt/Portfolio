@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone Tracker - EducAtIon Advisor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Basic Placeholder Styles - Needs significant work in style.css */
+        #milestone-roadmap-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding-bottom: 20px; /* Space for scrollbar */
+            background-color: #f8f9fa; /* Light bg for contrast */
+            border: 1px solid #dee2e6;
+            border-radius: 0.375rem;
+        }
+
+        #milestone-timeline {
+            display: flex; /* Lay out time segments horizontally */
+            min-width: 1200px; /* Ensure wide enough to scroll (adjust as needed) */
+            padding: 20px;
+            position: relative; /* For potential connecting lines later */
+        }
+
+        /* Basic line simulation */
+        #milestone-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: 50%; /* Center the line roughly */
+            height: 4px;
+            background-color: #adb5bd; /* Grey line color */
+            z-index: 1;
+            margin-top: -2px; /* Offset */
+        }
+
+
+        .time-segment {
+            flex: 1; /* Each segment takes space */
+            padding: 15px;
+            /* border-right: 1px dashed #ccc; */ /* Optional separator */
+            min-width: 250px; /* Minimum width per segment */
+            position: relative; /* Needed for marker positioning relative to segment */
+            z-index: 2; /* Make segments appear above the line */
+            text-align: center; /* Center header */
+        }
+
+        .time-segment h5 { /* Header for the time segment */
+             margin-bottom: 1.5rem;
+             font-weight: bold;
+             color: #6c757d;
+        }
+
+        .milestone-marker {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 0.375rem;
+            padding: 0.5rem;
+            margin-bottom: 0.75rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-size: 0.85em;
+            text-align: left;
+            position: relative; /* To position above/below line if needed */
+            width: 90%; /* Control width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Color-coding based on category */
+        .milestone-marker.academic { border-left: 4px solid #0d6efd; } /* Blue */
+        .milestone-marker.skill { border-left: 4px solid #198754; } /* Green */
+        .milestone-marker.career { border-left: 4px solid #dc3545; } /* Red */
+        .milestone-marker.scholarship { border-left: 4px solid #ffc107; } /* Yellow */
+        .milestone-marker.personal { border-left: 4px solid #6f42c1; } /* Purple */
+
+        .milestone-marker i { margin-right: 0.5em; }
+
+        /* Badge Styling */
+        .badge-container { margin-bottom: 1rem; }
+        .milestone-badge {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* Circular badges */
+            background-color: #e9ecef; /* Default background */
+            color: #6c757d; /* Default icon color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto 5px auto; /* Center horizontally */
+            border: 3px solid #adb5bd;
+            transition: all 0.3s ease;
+        }
+        .milestone-badge.earned {
+            background-color: #198754; /* Green background for earned */
+            color: white;
+            border-color: #157347;
+        }
+         .milestone-badge.locked {
+            opacity: 0.5;
+            cursor: help; /* Indicate hover text */
+        }
+        .badge-container span {
+            font-size: 0.8em;
+            font-weight: bold;
+            color: #6c757d;
+        }
+         .badge-container .earned span {
+             color: #198754; /* Match earned badge color */
+         }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/edu-copilot-logo.jpg" alt="EducAtIon Advisor Logo" class="navbar-logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic_planning.html">Academic Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_assistance.html">Class Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill_enhancement.html">Skills</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="advisor_connect.html">Advisor AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career_launchpad.html">Career</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="scholarship_engine.html">Scholarships</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="milestone_tracker.html">Milestones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item me-2">
+                         <a href="profile_settings.html" class="nav-link" title="Profile & Settings"><i class="fas fa-user-circle fs-5"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                            <i class="fas fa-star me-1"></i>Upgrade to Premium
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-4 bg-light border-bottom mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Milestone Tracker</h1>
+            <p class="text-muted">Visualize your journey, celebrate achievements, and plan your next steps across academics, skills, and career goals.</p>
+        </div>
+    </header>
+
+     <main class="container mb-5">
+
+        <section id="milestone-roadmap" class="mb-5">
+            <h2 class="mb-3 text-center">Your Personalized Journey</h2>
+            <p class="text-muted text-center small mb-4">Track your progress over time. Hover over milestones for simulated details (in a real app!).</p>
+
+            <div id="milestone-roadmap-container" class="shadow-sm">
+                <div id="milestone-timeline">
+
+                    <div class="time-segment">
+                        <h5>Year 1 - Fall 2023</h5>
+                        <div class="milestone-marker academic" title="Started University - August 2023">
+                            <i class="fas fa-flag"></i> Started University
+                        </div>
+                         <div class="milestone-marker academic" title="Completed MATH 1300 - December 2023">
+                             <i class="fas fa-graduation-cap"></i> Completed MATH 1300
+                        </div>
+                         <div class="milestone-marker personal" title="Joined Coding Club - September 2023">
+                             <i class="fas fa-users"></i> Joined Coding Club
+                        </div>
+                    </div>
+
+                    <div class="time-segment">
+                        <h5>Year 1 - Spring 2024</h5>
+                         <div class="milestone-marker academic" title="Completed CSCI 1300 - May 2024">
+                             <i class="fas fa-graduation-cap"></i> Completed CSCI 1300
+                        </div>
+                         <div class="milestone-marker skill" title="Learned Basic Git - March 2024">
+                            <i class="fab fa-git-alt"></i> Learned Basic Git
+                        </div>
+                        <div class="milestone-marker personal" title="First Volunteer Event - April 2024">
+                            <i class="fas fa-hands-helping"></i> First Volunteer Event
+                        </div>
+                    </div>
+
+                    <div class="time-segment">
+                        <h5>Year 2 - Fall 2024</h5>
+                         <div class="milestone-marker academic" title="Declared Major: CS - September 2024">
+                             <i class="fas fa-flag-checkered"></i> Declared Major: CS
+                        </div>
+                         <div class="milestone-marker skill" title="Completed Python Course (Udemy) - November 2024">
+                             <i class="fab fa-python"></i> Completed Python Course
+                        </div>
+                         <div class="milestone-marker career" title="Attended First Career Fair - October 2024">
+                             <i class="fas fa-search"></i> Attended Career Fair
+                        </div>
+                         <div class="milestone-marker career" title="Created Resume V1 - October 2024">
+                             <i class="fas fa-file-alt"></i> Created Resume V1
+                        </div>
+                         <div class="milestone-marker scholarship" title="Applied for 'Tech Innovators' - November 2024">
+                             <i class="fas fa-paper-plane"></i> Applied for Scholarship
+                        </div>
+                    </div>
+
+                     <div class="time-segment">
+                        <h5>Year 2 - Spring 2025</h5>
+                         <div class="milestone-marker academic" title="Reached 60 Credits - May 2025">
+                             <i class="fas fa-graduation-cap"></i> Reached 60 Credits
+                        </div>
+                         <div class="milestone-marker career" title="Landed Internship Interview - March 2025">
+                            <i class="fas fa-microphone-alt"></i> Landed Interview
+                        </div>
+                         <div class="milestone-marker skill" title="Achieved Intermediate Public Speaking - April 2025">
+                            <i class="fas fa-comments"></i> Intermediate Public Speaking
+                        </div>
+                          <div class="milestone-marker scholarship" title="Awarded Local Grant $1000 - April 2025">
+                             <i class="fas fa-dollar-sign"></i> Awarded Local Grant
+                        </div>
+                    </div>
+
+                     <div class="time-segment">
+                        <h5>Projected Graduation</h5>
+                         <div class="milestone-marker academic" title="Projected Graduation - May 2027">
+                             <i class="fas fa-user-graduate fa-2x"></i> Graduation!
+                        </div>
+                        <div class="milestone-marker career" title="Goal: Secure Full-Time Job Offer">
+                             <i class="fas fa-briefcase"></i> Goal: Job Offer
+                        </div>
+                    </div>
+
+                </div> </div> <p class="text-muted small mt-3 text-center">Premium users get AI-suggested milestones and can integrate this timeline into a shareable portfolio.</p>
+        </section>
+
+         <section id="add-milestone" class="mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="mb-0">Add & Manage Your Milestones</h4>
+                </div>
+                <div class="card-body">
+                     <div class="row">
+                         <div class="col-md-6 border-end">
+                            <h5>Add Manual Milestone</h5>
+                            <form>
+                                <div class="mb-2">
+                                    <label for="milestoneTitle" class="form-label form-label-sm">Milestone Title</label>
+                                    <input type="text" class="form-control form-control-sm" id="milestoneTitle" placeholder="e.g., Presented at Conference" disabled>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <label for="milestoneDate" class="form-label form-label-sm">Date Achieved</label>
+                                        <input type="date" class="form-control form-control-sm" id="milestoneDate" disabled>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="milestoneCategory" class="form-label form-label-sm">Category</label>
+                                        <select id="milestoneCategory" class="form-select form-select-sm" disabled>
+                                            <option selected>Select...</option>
+                                            <option>Academic</option>
+                                            <option>Skill</option>
+                                            <option>Career</option>
+                                            <option>Scholarship</option>
+                                            <option>Personal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                     <label for="milestoneDesc" class="form-label form-label-sm">Description (Optional)</label>
+                                     <textarea class="form-control form-control-sm" id="milestoneDesc" rows="2" disabled></textarea>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-primary" disabled><i class="fas fa-plus me-1"></i>Add Milestone</button>
+                            </form>
+                         </div>
+                         <div class="col-md-6">
+                              <h5 class="text-warning"><i class="fas fa-star me-1"></i>AI Suggestions (Premium)</h5>
+                               <p class="small text-muted">Based on your progress in other sections, we think you might have achieved these milestones:</p>
+                               <ul class="list-group list-group-flush small">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span><i class="fas fa-lock me-1"></i>Completed CSCI 2270?</span>
+                                        <button class="btn btn-xs btn-outline-success py-0" disabled title="Add this suggested milestone"><i class="fas fa-check"></i> Add</button>
+                                    </li>
+                                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span><i class="fas fa-lock me-1"></i>Updated Resume on [Date]?</span>
+                                        <button class="btn btn-xs btn-outline-success py-0" disabled title="Add this suggested milestone"><i class="fas fa-check"></i> Add</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span><i class="fas fa-lock me-1"></i>Finished 'Intro to SQL' course?</span>
+                                        <button class="btn btn-xs btn-outline-success py-0" disabled title="Add this suggested milestone"><i class="fas fa-check"></i> Add</button>
+                                    </li>
+                               </ul>
+                                <button class="btn btn-sm btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#premiumModal">Unlock AI Suggestions</button>
+                          </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="achievement-badges" class="mb-5">
+            <h3 class="text-center mb-4"><i class="fas fa-trophy me-2"></i>Your Achievements</h3>
+             <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 g-4 text-center">
+                 <div class="col badge-container">
+                     <div class="milestone-badge earned"><i class="fas fa-play-circle fa-2x"></i></div>
+                     <span>Get Started</span>
+                 </div>
+                 <div class="col badge-container">
+                     <div class="milestone-badge earned"><i class="fas fa-user-edit fa-2x"></i></div>
+                     <span>Profile Power-Up</span>
+                 </div>
+                 <div class="col badge-container">
+                    <div class="milestone-badge earned"><i class="fas fa-calendar-check fa-2x"></i></div>
+                    <span>First Semester</span>
+                 </div>
+                  <div class="col badge-container">
+                    <div class="milestone-badge earned"><i class="fas fa-search fa-2x"></i></div>
+                    <span>Skill Explorer</span>
+                 </div>
+
+                  <div class="col badge-container">
+                     <div class="milestone-badge locked" title="Declare your major in Academic Planning"><i class="fas fa-flag fa-2x"></i></div>
+                     <span>Major Declared</span>
+                 </div>
+                  <div class="col badge-container">
+                     <div class="milestone-badge locked" title="Log an internship in Career Launchpad"><i class="fas fa-briefcase fa-2x"></i></div>
+                     <span>Internship Ace</span>
+                 </div>
+                  <div class="col badge-container">
+                     <div class="milestone-badge locked" title="Track a submitted scholarship application"><i class="fas fa-dollar-sign fa-2x"></i></div>
+                     <span>Scholarship Hunter</span>
+                 </div>
+                  <div class="col badge-container">
+                     <div class="milestone-badge locked" title="Complete 50% of degree credits"><i class="fas fa-hourglass-half fa-2x"></i></div>
+                     <span>Halfway There</span>
+                 </div>
+                  <div class="col badge-container">
+                     <div class="milestone-badge locked" title="Reach your final year"><i class="fas fa-graduation-cap fa-2x"></i></div>
+                     <span>Graduation Ready</span>
+                 </div>
+                 </div>
+             <p class="text-center text-muted small mt-3">Unlock exclusive badges by achieving premium milestones!</p>
+        </section>
+
+
+        <section id="sharing-options" class="mb-5 text-center">
+             <h4>Share Your Progress</h4>
+             <p class="small text-muted">Share selected milestones or earned badges (respecting your privacy settings).</p>
+             <button class="btn btn-sm btn-outline-primary me-1" disabled><i class="fab fa-linkedin me-1"></i>Share Achievement on LinkedIn</button>
+             <button class="btn btn-sm btn-outline-secondary" disabled><i class="fas fa-share-alt me-1"></i>Generate Shareable Link</button>
+        </section>
+
+        <section id="premium-milestone-features" class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>Enhance Your Journey with Premium</h2>
+             <div class="row g-3 text-center">
+                 <div class="col-md col-lg">
+                     <i class="fas fa-robot fa-2x text-primary mb-2"></i>
+                    <h6>AI Milestone Suggestions</h6>
+                    <p class="small text-muted">Automatically identify potential achievements based on your data.</p>
+                 </div>
+                  <div class="col-md col-lg">
+                      <i class="fas fa-project-diagram fa-2x text-success mb-2"></i>
+                     <h6>Advanced Visualization</h6>
+                     <p class="small text-muted">More interactive and customizable timeline/roadmap views.</p>
+                  </div>
+                 <div class="col-md col-lg">
+                     <i class="fas fa-id-card fa-2x text-info mb-2"></i>
+                    <h6>Portfolio Builder</h6>
+                    <p class="small text-muted">Integrate milestones into a shareable showcase portfolio.</p>
+                 </div>
+                 <div class="col-md col-lg">
+                      <i class="fas fa-medal fa-2x text-danger mb-2"></i>
+                     <h6>Exclusive Badges</h6>
+                     <p class="small text-muted">Unlock unique badges and rewards for premium achievements.</p>
+                 </div>
+             </div>
+             <div class="text-center mt-3">
+                 <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Premium</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white mt-auto">
+         <div class="container text-center">
+            <small>Copyright &copy; EducAtIon Advisor <span id="current-year"></span></small>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-white-50 me-2">Privacy Policy</a>
+                <span class="text-white-50">|</span>
+                <a href="terms.html" class="text-white-50 ms-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="premiumModal" tabindex="-1" aria-labelledby="premiumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="premiumModalLabel"><i class="fas fa-star me-2"></i>EducAtIon Advisor Premium Features</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+             <p class="lead">Upgrade to unlock powerful tools designed to maximize your success:</p>
+             <ul>
+              <li><strong>Unlimited AI Advisor Access:</strong> Get personalized, context-aware advice 24/7 based on your academic plan.</li>
+              <li><strong>Automated Scholarship Matching:</strong> Let our AI find relevant scholarships based on your complete profile, with weekly alerts.</li>
+              <li><strong>Advanced Academic Planning:</strong> Run "What-If" scenarios, optimize course sequences, and get proactive alerts.</li>
+              <li><strong>AI-Powered Study Tools & Skill Paths:</strong> Generate summaries, flashcards, personalized learning sequences, and get deeper insights from your course materials.</li>
+              <li><strong>Enhanced Career Tools & Integrated Tracking:</strong> AI resume feedback & assist, personalized job matching & fit scores, interview prep simulator, and automated skill progress tracking.</li>
+              <li><strong>Scholarship Application Tracker:</strong> Organize and manage your scholarship applications efficiently.</li>
+              <li><strong>Enhanced Milestone Tracking:</strong> AI suggestions, advanced visualizations, exclusive badges, and portfolio integration.</li> <li><strong>And much more!</strong></li>
+            </ul>
+            <p>Invest in your future and navigate college with confidence.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+            <a href="#" class="btn btn-warning">Upgrade Now!</a> </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"], [title]:not([data-bs-toggle="modal"])'); // Enable tooltips on elements with title attribute, excluding modals
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+    <script>
+        // Ensure this only runs once
+        if (!window.footerYearUpdated) {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            window.footerYearUpdated = true;
+        }
+    </script>
+
+    </body>
+</html>

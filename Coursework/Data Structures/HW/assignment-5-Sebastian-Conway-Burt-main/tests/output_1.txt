@@ -1,0 +1,228 @@
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Enter the name of the customer: Enter the number of pancakes: Enter the type of pancakes: 
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Enter the name of the customer: Enter the number of pancakes: Enter the type of pancakes: 
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Enter the name of the customer: Enter the number of pancakes: Enter the type of pancakes: 
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Enter the name of the customer: Enter the number of pancakes: Enter the type of pancakes: 
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Enter the name of the customer: Enter the number of pancakes: Enter the type of pancakes: 
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Orders for the pancake house: 
+Customer name: Edward
+Number of pancakes ordered: 10
+Type of pancakes: 4
+Customer name: Bilbo Baggins
+Number of pancakes ordered: 10
+Type of pancakes: 1
+Customer name: Shark
+Number of pancakes ordered: 3
+Type of pancakes: 4
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Profit since last check: 0
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Profit since last check: 40
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Money refunded = 9
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Profit since last check: 40
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+WELCOME TO ASA'S PANCAKE HOUSE!
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+============= MENU =============
+1. Make an order
+2. Cook pancakes
+3. Strike order
+4. Refund order
+5. Display orders
+6. Display order total
+7. Close shop
+8. Exit
+================================
+Enter your choice: Exiting program.

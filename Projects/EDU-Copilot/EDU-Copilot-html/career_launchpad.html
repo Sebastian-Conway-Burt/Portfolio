@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Launchpad - EducAtIon Advisor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/edu-copilot-logo.jpg" alt="EducAtIon Advisor Logo" class="navbar-logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic_planning.html">Academic Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_assistance.html">Class Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill_enhancement.html">Skills</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="advisor_connect.html">Advisor AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="career_launchpad.html">Career</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="scholarship_engine.html">Scholarships</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="milestone_tracker.html">Milestones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item me-2">
+                         <a href="profile_settings.html" class="nav-link" title="Profile & Settings"><i class="fas fa-user-circle fs-5"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                            <i class="fas fa-star me-1"></i>Upgrade to Premium
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <header class="py-4 bg-light border-bottom mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Career Launchpad</h1>
+            <p class="text-muted">Explore careers, find opportunities, build your resume, and prepare for your future.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+
+        <section id="career-exploration" class="mb-5">
+            <h3 class="mb-3"><i class="fas fa-compass me-2"></i>Explore Career Paths</h3>
+            <p class="text-muted">Based on your profile (Example: Major: Computer Science | Skills: Python, Project Management), here are some potential paths:</p>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <p class="card-text small">Designs, develops, and maintains software systems.</p>
+                            <p class="card-text"><small><strong>Common Skills:</strong> Python, Java, C++, Data Structures, Algorithms, Git</small></p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary me-1">O*NET Profile</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">BLS Outlook</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analyst</h5>
+                            <p class="card-text small">Collects, processes, and performs statistical analyses of data.</p>
+                            <p class="card-text"><small><strong>Common Skills:</strong> SQL, Python/R, Excel, Data Visualization, Statistics</small></p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary me-1">O*NET Profile</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">BLS Outlook</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">IT Project Coordinator</h5>
+                            <p class="card-text small">Helps manage IT projects, coordinates tasks, and communicates with stakeholders.</p>
+                             <p class="card-text"><small><strong>Common Skills:</strong> Project Management, Communication, Organization</small></p>
+                             <a href="#" class="btn btn-sm btn-outline-secondary me-1">O*NET Profile</a>
+                             <a href="#" class="btn btn-sm btn-outline-secondary">BLS Outlook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <p class="text-muted small mt-3">Upgrade for personalized career path suggestions and AI-driven analysis based on your unique profile.</p>
+        </section>
+
+        <section id="job-search" class="mb-5">
+            <h3 class="mb-3"><i class="fas fa-search-dollar me-2"></i>Find Opportunities</h3>
+            <div class="card card-body bg-light mb-4 shadow-sm">
+                 <div class="row g-2 align-items-end">
+                     <div class="col-md-4">
+                         <label for="keywords" class="form-label form-label-sm">Keywords (Title, Skill)</label>
+                         <input type="text" class="form-control form-control-sm" id="keywords" placeholder="e.g., Software Intern, Python" disabled>
+                     </div>
+                     <div class="col-md-3">
+                         <label for="location" class="form-label form-label-sm">Location</label>
+                         <input type="text" class="form-control form-control-sm" id="location" placeholder="Boulder, CO or Remote" disabled>
+                     </div>
+                     <div class="col-md-3">
+                         <label for="jobType" class="form-label form-label-sm">Job Type</label>
+                         <select class="form-select form-select-sm" id="jobType" disabled>
+                             <option selected>Any</option>
+                             <option value="1">Internship</option>
+                             <option value="2">Full-time</option>
+                             <option value="3">Part-time</option>
+                         </select>
+                     </div>
+                     <div class="col-md-2">
+                         <button class="btn btn-primary btn-sm w-100" disabled>Search</button>
+                     </div>
+                 </div>
+            </div>
+
+            <h4>Recommended Opportunities (Examples)</h4>
+             <p class="text-muted small">Upgrade for AI job matching tailored to your profile, personalized fit scores, and exclusive listings.</p>
+            <div class="row g-4 mt-1">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header small text-muted">
+                            Software Engineer Intern | Tech Solutions Inc. | Denver, CO / Remote
+                        </div>
+                        <div class="card-body">
+                             <p class="card-text small">Seeking motivated interns to contribute to software development projects. Work alongside experienced engineers... Requires basic knowledge of Python or Java.</p>
+                             <p class="mb-1"><small><strong>Skills Mentioned:</strong> Python, Java, Teamwork</small></p>
+                             <div><small><strong>General Fit:</strong></small>
+                                <div class="progress d-inline-block align-middle ms-1" style="height: 10px; width: 60px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted ms-1">(3/5)</small>
+                             </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-end pb-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1">View Details</a>
+                            <button class="btn btn-sm btn-outline-secondary" disabled><i class="far fa-bookmark me-1"></i>Save</button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                     <div class="card h-100 shadow-sm border-warning"> <div class="card-header small text-muted bg-warning-subtle"> Data Analyst Intern | Data Insights LLC | Boulder, CO
+                        </div>
+                        <div class="card-body">
+                             <p class="card-text small">Exciting opportunity for students interested in data! Assist our analytics team with data cleaning, analysis, and visualization using SQL and Python...</p>
+                            <p class="mb-1"><small><strong>Skills Mentioned:</strong> SQL, Python, Excel, Communication</small></p>
+                            <p class="mb-1"><small><strong><span class="badge bg-warning text-dark">Premium</span> Match:</strong> <span class="badge bg-success">Python</span> <span class="badge bg-success">SQL</span> (Your Skills!) Aligns with interest: <span class="badge bg-info">Data Analysis</span></small></p>
+                             <div><small><strong>Personalized Fit:</strong></small> <span class="badge bg-warning text-dark fs-6 align-middle ms-1">85%</span></div>
+                        </div>
+                         <div class="card-footer bg-transparent border-top-0 text-end pb-3">
+                             <button class="btn btn-sm btn-outline-warning me-1 disabled" title="Premium Feature"><i class="fas fa-magic me-1"></i>AI Apply Assist</button>
+                             <a href="#" class="btn btn-sm btn-outline-primary me-1">View Details</a>
+                             <button class="btn btn-sm btn-outline-secondary" disabled><i class="far fa-bookmark me-1"></i>Save</button>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header small text-muted">
+                            Marketing Intern | Creative Co. | Remote
+                        </div>
+                        <div class="card-body">
+                             <p class="card-text small">Assist marketing team with social media campaigns, content creation, and market research. Strong writing skills needed...</p>
+                             <p class="mb-1"><small><strong>Skills Mentioned:</strong> Social Media, Writing, Communication</small></p>
+                             <div><small><strong>General Fit:</strong></small>
+                                <div class="progress d-inline-block align-middle ms-1" style="height: 10px; width: 60px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted ms-1">(2/5)</small>
+                             </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-end pb-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1">View Details</a>
+                            <button class="btn btn-sm btn-outline-secondary" disabled><i class="far fa-bookmark me-1"></i>Save</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="resume-tools" class="mb-5">
+            <h3 class="mb-3"><i class="fas fa-file-alt me-2"></i>Build & Tailor Your Application</h3>
+            <ul class="nav nav-tabs mb-3" id="resumeTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="builder-tab" data-bs-toggle="tab" data-bs-target="#builder-pane" type="button" role="tab" aria-controls="builder-pane" aria-selected="true">Resume Builder</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="analysis-tab" data-bs-toggle="tab" data-bs-target="#analysis-pane" type="button" role="tab" aria-controls="analysis-pane" aria-selected="false">AI Resume Analysis <span class="badge bg-warning text-dark ms-1">Premium</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="coverletter-tab" data-bs-toggle="tab" data-bs-target="#coverletter-pane" type="button" role="tab" aria-controls="coverletter-pane" aria-selected="false">Cover Letter Tips</button>
+                </li>
+                 <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ai-coverletter-tab" data-bs-toggle="tab" data-bs-target="#ai-coverletter-pane" type="button" role="tab" aria-controls="ai-coverletter-pane" aria-selected="false">AI Cover Letter Assist <span class="badge bg-warning text-dark ms-1">Premium</span></button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="resumeTabsContent">
+                <div class="tab-pane fade show active" id="builder-pane" role="tabpanel" aria-labelledby="builder-tab" tabindex="0">
+                    <h5>Basic Resume Builder</h5>
+                    <p>Download simple templates to get started. Focus on these key sections:</p>
+                    <ul>
+                        <li>Contact Information</li>
+                        <li>Summary/Objective (Optional)</li>
+                        <li>Education</li>
+                        <li>Experience (Internships, Projects, Work)</li>
+                        <li>Skills (Technical & Soft)</li>
+                        <li>Activities/Awards (Optional)</li>
+                    </ul>
+                    <a href="#" class="btn btn-sm btn-outline-secondary me-2"><i class="fas fa-file-word me-1"></i>Download Template (Word)</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fab fa-google-drive me-1"></i>Download Template (G Doc)</a>
+                    <hr>
+                     <button class="btn btn-sm btn-outline-secondary mt-2" disabled>Upload Existing Resume (View Only)</button>
+                </div>
+
+                <div class="tab-pane fade" id="analysis-pane" role="tabpanel" aria-labelledby="analysis-tab" tabindex="0">
+                    <h5 class="text-warning"><i class="fas fa-star me-1"></i>AI Resume Analysis (Premium)</h5>
+                    <p>Upload your resume (PDF or DOCX) and optionally paste a job description to get instant AI-powered feedback tailored to the role!</p>
+                     <div class="mb-3">
+                        <label for="resumeUploadAnalysis" class="form-label form-label-sm">Upload Resume:</label>
+                        <input type="file" class="form-control form-control-sm" id="resumeUploadAnalysis" disabled>
+                    </div>
+                     <div class="mb-3">
+                         <label for="jobDescAnalysis" class="form-label form-label-sm">Paste Job Description (Optional):</label>
+                         <textarea class="form-control form-control-sm" id="jobDescAnalysis" rows="3" placeholder="Paste job description here for tailored feedback..." disabled></textarea>
+                    </div>
+                    <button class="btn btn-warning mb-3" disabled>Analyze My Resume</button>
+
+                    <h6>AI Feedback (Example):</h6>
+                    <div class="p-3 border rounded bg-light">
+                        <p class="text-muted small">AI analysis results will appear here...</p>
+                         <p><i class="fas fa-lock text-muted me-1"></i> **Strength:** Clear education section with relevant coursework.</p>
+                         <p><i class="fas fa-lock text-muted me-1"></i> **Improvement:** Quantify achievements in 'Project Lead' role using numbers (e.g., 'Increased efficiency by 15%'). Use the STAR method.</p>
+                         <p><i class="fas fa-lock text-muted me-1"></i> **Keyword Match (for Data Analyst Intern):** Highlight 'SQL' and add specific Python libraries like 'Pandas' if proficient.</p>
+                         <p><i class="fas fa-lock text-muted me-1"></i> **Formatting:** Consistent date formats recommended.</p>
+                    </div>
+                     <button class="btn btn-sm btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Unlock Analysis</button>
+                </div>
+
+                <div class="tab-pane fade" id="coverletter-pane" role="tabpanel" aria-labelledby="coverletter-tab" tabindex="0">
+                    <h5>Cover Letter Basics</h5>
+                     <p>A cover letter introduces you and highlights your relevant qualifications for a specific job. Key tips:</p>
+                     <ul>
+                         <li>Address it to a specific person if possible.</li>
+                         <li>Tailor it to EACH job application – don't use a generic one.</li>
+                         <li>Explain *why* you want to work for *that* company.</li>
+                         <li>Connect your skills/experience directly to the job requirements.</li>
+                         <li>Keep it concise (usually 3-4 paragraphs).</li>
+                         <li>Proofread carefully!</li>
+                     </ul>
+                     <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-external-link-alt me-1"></i>View Examples (Purdue OWL)</a>
+                </div>
+
+                <div class="tab-pane fade" id="ai-coverletter-pane" role="tabpanel" aria-labelledby="ai-coverletter-tab" tabindex="0">
+                     <h5 class="text-warning"><i class="fas fa-star me-1"></i>AI Cover Letter Assist (Premium)</h5>
+                     <p>Let AI help you draft a compelling cover letter. Ensure your resume is uploaded and paste the job description below.</p>
+                     <div class="mb-3">
+                         <label for="jobDescCoverLetter" class="form-label form-label-sm">Paste Job Description:</label>
+                         <textarea class="form-control form-control-sm" id="jobDescCoverLetter" rows="4" placeholder="Paste the full job description here..." disabled></textarea>
+                    </div>
+                     <button class="btn btn-warning mb-3" disabled>Generate Cover Letter Draft</button>
+                     <h6>Generated Draft (Example):</h6>
+                      <div class="p-3 border rounded bg-light">
+                         <p class="text-muted small">AI generated draft will appear here...</p>
+                         <p><i class="fas fa-lock text-muted me-1"></i> Dear [Hiring Manager Name],...</p>
+                         <p><i class="fas fa-lock text-muted me-1"></i> Based on your requirement for [Skill X] mentioned in the job description, my experience in [Relevant Project/Course] demonstrates...</p>
+                     </div>
+                     <button class="btn btn-sm btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Unlock AI Drafts</button>
+                 </div>
+            </div> </section>
+
+         <section id="interview-prep" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-microphone-alt me-2"></i>Prepare for Interviews</h3>
+              <div class="row g-4">
+                 <div class="col-md-6">
+                     <h5>Interview Resources (Freemium)</h5>
+                     <div class="list-group">
+                         <a href="#" class="list-group-item list-group-item-action">Guide: Using the STAR Method Effectively</a>
+                         <a href="#" class="list-group-item list-group-item-action">Article: Top 20 Behavioral Interview Questions</a>
+                         <a href="#" class="list-group-item list-group-item-action">Video: Tips for Successful Virtual Interviews</a>
+                         <a href="#" class="list-group-item list-group-item-action">Checklist: Pre-Interview Preparation</a>
+                     </div>
+                 </div>
+                  <div class="col-md-6">
+                     <div class="card h-100 border-warning bg-light shadow-sm">
+                         <div class="card-body text-center">
+                            <h5 class="card-title text-warning"><i class="fas fa-star me-1"></i>AI Interview Simulator (Premium)</h5>
+                            <p class="card-text small text-muted">Practice common and role-specific questions with our AI simulator. Get instant feedback on your answers and delivery.</p>
+                             <button class="btn btn-lg btn-warning my-3" disabled><i class="fas fa-play-circle me-2"></i>Start AI Mock Interview</button>
+                             <h6>Example Feedback Snippets:</h6>
+                             <ul class="list-unstyled small text-start">
+                                 <li><i class="fas fa-lock text-muted me-1"></i> Content: Strong STAR example for 'Teamwork', could add more specific detail to the 'Result'.</li>
+                                 <li><i class="fas fa-lock text-muted me-1"></i> Delivery: Good confidence, pace slightly fast on technical questions.</li>
+                                 <li><i class="fas fa-lock text-muted me-1"></i> Filler Words: Reduced use of 'um' compared to last practice.</li>
+                             </ul>
+                              <button class="btn btn-sm btn-warning mt-2" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Practice</button>
+                         </div>
+                     </div>
+                 </div>
+              </div>
+        </section>
+
+         <section id="premium-career-features" class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>Launch Your Career with Premium</h2>
+            <div class="row g-3 text-center">
+                <div class="col-md col-lg">
+                    <i class="fas fa-bullseye fa-2x text-primary mb-2"></i>
+                    <h6>AI Job Matching</h6>
+                    <p class="small text-muted">Personalized fit scores & recommendations.</p>
+                </div>
+                 <div class="col-md col-lg">
+                     <i class="fas fa-users fa-2x text-success mb-2"></i>
+                    <h6>Exclusive Listings</h6>
+                    <p class="small text-muted">Access opportunities from partner companies.</p>
+                </div>
+                 <div class="col-md col-lg">
+                     <i class="fas fa-file-signature fa-2x text-info mb-2"></i>
+                    <h6>AI Resume/Cover Letter Tools</h6>
+                    <p class="small text-muted">Analysis and drafting assistance.</p>
+                </div>
+                 <div class="col-md col-lg">
+                     <i class="fas fa-comments fa-2x text-danger mb-2"></i>
+                    <h6>Advanced AI Interview Prep</h6>
+                    <p class="small text-muted">Practice simulator with detailed feedback.</p>
+                </div>
+                 <div class="col-md col-lg">
+                     <i class="fas fa-hand-holding-usd fa-2x text-secondary mb-2"></i>
+                    <h6>Salary Insights (Example)</h6>
+                    <p class="small text-muted">AI-driven salary negotiation tips.</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                 <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Premium</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white mt-auto">
+         <div class="container text-center">
+            <small>Copyright &copy; EducAtIon Advisor <span id="current-year"></span></small>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-white-50 me-2">Privacy Policy</a>
+                <span class="text-white-50">|</span>
+                <a href="terms.html" class="text-white-50 ms-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="premiumModal" tabindex="-1" aria-labelledby="premiumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="premiumModalLabel"><i class="fas fa-star me-2"></i>EducAtIon Advisor Premium Features</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Upgrade to unlock powerful tools designed to maximize your success:</p>
+            <ul>
+              <li><strong>Unlimited AI Advisor Access:</strong> Get personalized, context-aware advice 24/7 based on your academic plan.</li>
+              <li><strong>Automated Scholarship Matching:</strong> Let our AI find relevant scholarships based on your complete profile.</li>
+              <li><strong>Advanced Academic Planning:</strong> Run "What-If" scenarios, optimize course sequences, and get proactive alerts.</li>
+              <li><strong>AI-Powered Study Tools & Skill Paths:</strong> Generate summaries, flashcards, personalized learning sequences, and get deeper insights from your course materials.</li>
+              <li><strong>Enhanced Career Tools & Integrated Tracking:</strong> AI resume feedback & assist, personalized job matching & fit scores, interview prep simulator, and automated skill progress tracking.</li> <li><strong>And much more!</strong></li>
+            </ul>
+            <p>Invest in your future and navigate college with confidence.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+            <a href="#" class="btn btn-warning">Upgrade Now!</a> </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Ensure this only runs once
+        if (!window.footerYearUpdated) {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            window.footerYearUpdated = true;
+        }
+    </script>
+
+    </body>
+</html>

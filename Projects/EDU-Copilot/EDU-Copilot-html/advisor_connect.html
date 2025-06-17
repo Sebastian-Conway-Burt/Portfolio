@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisor AI Connect - EducAtIon Advisor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/edu-copilot-logo.jpg" alt="EducAtIon Advisor Logo" class="navbar-logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic_planning.html">Academic Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_assistance.html">Class Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill_enhancement.html">Skills</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="advisor_connect.html">Advisor AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career_launchpad.html">Career</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="scholarship_engine.html">Scholarships</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="milestone_tracker.html">Milestones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item me-2">
+                         <a href="profile_settings.html" class="nav-link" title="Profile & Settings"><i class="fas fa-user-circle fs-5"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                            <i class="fas fa-star me-1"></i>Upgrade to Premium
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <header class="py-4 bg-light border-bottom mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Advisor AI Connect</h1>
+            <p class="text-muted">Your AI-powered guide for academic questions and personalized advice.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+
+        <section id="advisor-status" class="mb-4">
+            <h4 class="mb-3">AI Advisor Status</h4>
+             <div class="alert alert-info py-2 small">
+                 <strong>Freemium Access:</strong> You have <span class="badge bg-primary">3 / 10</span> basic queries remaining this month.
+                 </div>
+             <div class="alert alert-warning py-2 small d-flex justify-content-between align-items-center">
+                <span>Upgrade for unlimited, personalized conversations tailored to your academic plan!</span>
+                <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#premiumModal"><i class="fas fa-star me-1"></i>Learn More</button>
+             </div>
+        </section>
+
+        <section id="chatbot-interface" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-comments me-2"></i>Chat with Your AI Advisor</h3>
+             <div class="card shadow-sm">
+                <div class="card-body">
+                    <div id="chat-window" class="mb-3 p-2 border rounded bg-white">
+                        <div class="chat-message ai-message">
+                            <div class="message-bubble">
+                                Hi there! I'm your AI Advisor. How can I help you today? Remember, Freemium users get 10 basic queries per month.
+                            </div>
+                        </div>
+                         <div class="chat-message user-message">
+                            <div class="message-bubble">
+                                What's the difference between dropping a class and withdrawing?
+                            </div>
+                        </div>
+                         <div class="chat-message ai-message">
+                            <div class="message-bubble">
+                                Generally, dropping a class early (before the drop deadline) removes it from your transcript entirely. Withdrawing later (before the withdrawal deadline) usually results in a 'W' grade on your transcript, which doesn't affect your GPA but indicates you left the course. Deadlines and specific policies vary greatly by university, so always check your official academic calendar and registrar's website!
+                            </div>
+                        </div>
+                         <div class="chat-message user-message">
+                            <div class="message-bubble">
+                                Based on my plan in the system, should I take CSCI 3308 or APPM 3310 next semester?
+                            </div>
+                        </div>
+                        <div class="chat-message ai-message">
+                            <div class="message-bubble">
+                                <i class="fas fa-lock me-1"></i> Providing personalized course recommendations based on your specific academic plan and progress requires <strong>Premium access</strong>.
+                                <br><br>
+                                However, I can give you general information about CSCI 3308 (Software Development Methods) or APPM 3310 (Matrix Methods), discuss common prerequisites, or talk about general strategies for choosing courses if you like!
+                            </div>
+                        </div>
+                        </div>
+
+                    <div class="input-group">
+                        <textarea class="form-control" id="chatInput" placeholder="Ask a question (e.g., 'Explain prerequisites')..." rows="2" disabled></textarea>
+                        <button class="btn btn-primary" type="button" id="sendButton" disabled title="Send message">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="quick-topics" class="mb-5">
+            <h5 class="mb-3">Quick Topics & Actions:</h5>
+            <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-sm btn-outline-secondary" disabled>Explain GPA</button>
+                <button class="btn btn-sm btn-outline-secondary" disabled>Find Tutoring Center Info</button>
+                <button class="btn btn-sm btn-outline-secondary" disabled>Tips for Choosing Electives</button>
+                <button class="btn btn-sm btn-outline-secondary" disabled>Resume Writing Basics</button>
+                <button class="btn btn-sm btn-outline-secondary disabled" title="Premium Feature"><i class="fas fa-star text-warning me-1"></i>Suggest Courses For Me</button>
+                <button class="btn btn-sm btn-outline-secondary disabled" title="Premium Feature"><i class="fas fa-star text-warning me-1"></i>Check My Graduation Plan</button>
+                </div>
+        </section>
+
+        <section id="ai-tips" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-lightbulb me-2"></i>Insights & Tips For You</h3>
+             <div class="vstack gap-3">
+                <div class="alert alert-info mb-0">
+                    <i class="fas fa-info-circle me-2"></i><strong>Study Tip:</strong> Try the Pomodoro Technique (25 min focus, 5 min break) for focused study sessions, especially effective for subjects like APPM 3310.
+                </div>
+                <div class="alert alert-success mb-0">
+                    <i class="fas fa-check-circle me-2"></i><strong>Plan Update:</strong> Your inputted course history suggests you've completed your lower-division humanities requirements! <span class="badge bg-light text-dark border ms-1">Based on Your Data</span>
+                </div>
+                 <div class="alert alert-warning mb-0">
+                    <i class="fas fa-exclamation-triangle me-2"></i><strong>Premium Insight:</strong> Considering your goal of 'Software Engineering', adding CSCI 3155 (Principles of Programming Languages) after CSCI 2400 could significantly strengthen your profile. <button class="btn btn-link text-warning p-0 pb-1 ms-1 fw-bold" style="font-size: 0.9em; vertical-align: baseline;" data-bs-toggle="modal" data-bs-target="#premiumModal">(Upgrade for Details)</button>
+                </div>
+             </div>
+        </section>
+
+         <section id="university-resources" class="mb-5">
+            <h3 class="mb-3"><i class="fas fa-university me-2"></i>Official University Resources</h3>
+             <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action">Academic Advising Office Homepage</a>
+                <a href="#" class="list-group-item list-group-item-action">Registrar's Office (Dates & Deadlines)</a>
+                <a href="#" class="list-group-item list-group-item-action">Financial Aid & Scholarships Office</a>
+                <a href="#" class="list-group-item list-group-item-action">Tutoring Services (Writing Center, Math Help, etc.)</a>
+                <a href="#" class="list-group-item list-group-item-action">Career Services Center</a>
+             </div>
+             <p class="text-muted small mt-2">Always verify official policies, deadlines, and advisor recommendations directly with the university.</p>
+        </section>
+
+
+        <section id="premium-advisor-features" class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>Unlock Your Personal AI Advisor with Premium</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-2">
+                        <i class="fas fa-comments fa-2x text-primary mb-2"></i>
+                        <h6>Unlimited Conversations</h6>
+                        <p class="small text-muted">Chat 24/7. The AI remembers your context and goals.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-2">
+                         <i class="fas fa-user-graduate fa-2x text-success mb-2"></i>
+                        <h6>Personalized Advice</h6>
+                        <p class="small text-muted">Course suggestions, major exploration, planning based on *your* data.</p>
+                    </div>
+                 </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-2">
+                         <i class="fas fa-bell fa-2x text-info mb-2"></i>
+                        <h6>Proactive Nudges</h6>
+                        <p class="small text-muted">Timely alerts about deadlines, potential issues, and opportunities.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-2">
+                        <i class="fas fa-brain fa-2x text-danger mb-2"></i>
+                        <h6>In-Depth Understanding</h6>
+                        <p class="small text-muted">Ask complex questions about requirements, policies, course concepts.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-3">
+                 <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Premium</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white mt-auto">
+         <div class="container text-center">
+            <small>Copyright &copy; EducAtIon Advisor <span id="current-year"></span></small>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-white-50 me-2">Privacy Policy</a>
+                <span class="text-white-50">|</span>
+                <a href="terms.html" class="text-white-50 ms-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="premiumModal" tabindex="-1" aria-labelledby="premiumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="premiumModalLabel"><i class="fas fa-star me-2"></i>EducAtIon Advisor Premium Features</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Upgrade to unlock powerful tools designed to maximize your success:</p>
+            <ul>
+              <li><strong>Unlimited AI Advisor Access:</strong> Get personalized, context-aware advice 24/7 based on your academic plan.</li>
+              <li><strong>Automated Scholarship Matching:</strong> Let our AI find relevant scholarships based on your complete profile.</li>
+              <li><strong>Advanced Academic Planning:</strong> Run "What-If" scenarios, optimize course sequences, and get proactive alerts.</li>
+              <li><strong>AI-Powered Study Tools & Skill Paths:</strong> Generate summaries, flashcards, personalized learning sequences, and get deeper insights from your course materials.</li>
+              <li><strong>Enhanced Career Tools & Integrated Tracking:</strong> AI resume feedback, personalized job matching, interview prep, and automated skill progress tracking.</li>
+              <li><strong>And much more!</strong></li>
+            </ul>
+            <p>Invest in your future and navigate college with confidence.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+            <a href="#" class="btn btn-warning">Upgrade Now!</a> </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Ensure this only runs once
+        if (!window.footerYearUpdated) {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            window.footerYearUpdated = true;
+        }
+    </script>
+
+    </body>
+</html>

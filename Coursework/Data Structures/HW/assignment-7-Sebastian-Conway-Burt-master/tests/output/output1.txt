@@ -1,0 +1,54 @@
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Show: Adventure Time 8.5
+Show: Big Little Lies 8.5
+Show: Berserk 8.5
+Show: Dark 8.5
+Show: John Adams 8.5
+Show: Homicide: Life on the Street 8.5
+Show: Mystery Science Theater 3000 8.5
+Show: Louie 8.5
+Show: The Punisher 8.5
+Show: The Eric Andre Show 8.5
+Show: The Night Of 8.5
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Enter a show title:
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Show: Adventure Time 8.5
+Show: Big Little Lies 8.5
+Show: Dark 8.5
+Show: John Adams 8.5
+Show: Homicide: Life on the Street 8.5
+Show: Mystery Science Theater 3000 8.5
+Show: Louie 8.5
+Show: The Punisher 8.5
+Show: The Eric Andre Show 8.5
+Show: The Night Of 8.5
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Enter a show title:
+======Main Menu======
+1. Delete a show
+2. Print show catalog
+3. Right rotate the tree
+4. Left rotate the tree
+5. Quit
+Goodbye!

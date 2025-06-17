@@ -1,0 +1,12 @@
+# VS Code settings
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you ever add build tools)
+node_modules/
+
+# Add any other files/folders you don't want to track
+# e.g., large data files, logs, etc.

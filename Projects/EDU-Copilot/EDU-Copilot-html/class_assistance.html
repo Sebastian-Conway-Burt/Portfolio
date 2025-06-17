@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Assistance - EducAtIon Advisor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/edu-copilot-logo.jpg" alt="EducAtIon Advisor Logo" class="navbar-logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic_planning.html">Academic Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="class_assistance.html">Class Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill_enhancement.html">Skills</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="advisor_connect.html">Advisor AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career_launchpad.html">Career</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="scholarship_engine.html">Scholarships</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="milestone_tracker.html">Milestones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item me-2">
+                         <a href="profile_settings.html" class="nav-link" title="Profile & Settings"><i class="fas fa-user-circle fs-5"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                            <i class="fas fa-star me-1"></i>Upgrade to Premium
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <header class="py-4 bg-light border-bottom mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Class Assistance Center</h1>
+            <p class="text-muted">Manage syllabi, track deadlines, access study resources, and get help with your courses.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+
+        <section id="current-courses" class="mb-4">
+             <div class="p-3 bg-light rounded">
+                <small class="text-muted">Currently Assisting With (Fall 2025 Example):</small>
+                <span class="fw-bold ms-2">CSCI 2400 | APPM 3310 | PHIL 1100 | SOCY 1001</span>
+                <a href="academic_planning.html#data-input-transcript" class="ms-3 small">(Manage Courses)</a>
+             </div>
+        </section>
+
+        <section id="syllabus-management" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-file-pdf me-2"></i>Manage Your Syllabi</h3>
+             <div class="card card-body bg-light mb-3">
+                <label for="syllabusUpload" class="form-label small">Upload Syllabus (PDF):</label>
+                <input type="file" class="form-control form-control-sm" id="syllabusUpload" disabled>
+                 <div class="form-text mt-1">
+                     <span class="badge bg-info-subtle text-dark me-2">Freemium: 2/5 Syllabi Uploaded This Semester</span>
+                     <span class="badge bg-warning-subtle text-dark">Upgrade for Unlimited Uploads & AI Analysis</span>
+                 </div>
+             </div>
+
+             <h6>Uploaded Syllabi (Examples):</h6>
+             <div class="accordion" id="syllabusAccordion">
+                 <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSyllabus1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSyllabus1" aria-expanded="false" aria-controls="collapseSyllabus1">
+                        <strong>CSCI 2400 - Computer Systems</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseSyllabus1" class="accordion-collapse collapse" aria-labelledby="headingSyllabus1" data-bs-parent="#syllabusAccordion">
+                        <div class="accordion-body small">
+                            <p><strong>Instructor:</strong> Dr. Ada Lovelace (Placeholder)</p>
+                            <p><strong>Office Hours:</strong> Tue 10:00-11:00 AM (Online)</p>
+                            <p><strong>Key Topics (Basic Extraction):</strong> C Programming Basics, Pointers & Memory, Assembly Language Intro, Linking & Loading...</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fas fa-eye me-1"></i>View Full Syllabus</a>
+                            <a href="#deadlines" class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-calendar-check me-1"></i>View Extracted Deadlines</a>
+                             <button class="btn btn-secondary btn-sm disabled" title="Premium Feature - AI Analysis"><i class="fas fa-magic me-1"></i>AI Analysis</button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSyllabus2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSyllabus2" aria-expanded="false" aria-controls="collapseSyllabus2">
+                         <strong>APPM 3310 - Matrix Methods</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseSyllabus2" class="accordion-collapse collapse" aria-labelledby="headingSyllabus2" data-bs-parent="#syllabusAccordion">
+                        <div class="accordion-body small">
+                            <p><strong>Instructor:</strong> Prof. Carl Gauss (Placeholder)</p>
+                            <p><strong>Office Hours:</strong> Wed 1:00-2:30 PM (ECOT 225)</p>
+                            <p><strong>Key Topics (Basic Extraction):</strong> Linear Systems, Vector Spaces, Eigenvalues & Eigenvectors, Least Squares...</p>
+                             <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fas fa-eye me-1"></i>View Full Syllabus</a>
+                            <a href="#deadlines" class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-calendar-check me-1"></i>View Extracted Deadlines</a>
+                             <button class="btn btn-secondary btn-sm disabled" title="Premium Feature - AI Analysis"><i class="fas fa-magic me-1"></i>AI Analysis</button>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+        </section>
+
+         <section id="deadlines" class="mb-5">
+             <h3 class="mb-3"><i class="fas fa-calendar-check me-2"></i>Upcoming Deadlines & Assignments</h3>
+             <button class="btn btn-sm btn-outline-primary mb-3" disabled><i class="fas fa-plus me-1"></i>Add Assignment/Deadline</button>
+
+             <div class="table-responsive">
+                <table class="table table-sm table-hover table-striped small">
+                    <thead>
+                        <tr class="table-light">
+                            <th>Due Date</th>
+                            <th>Course</th>
+                            <th>Assignment Name</th>
+                            <th>Status</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oct 25, 2025</td>
+                            <td>CSCI 2400</td>
+                            <td>Homework 3 - C Pointers</td>
+                            <td><input type="checkbox" class="form-check-input" disabled> To Do</td>
+                            <td><span class="badge bg-secondary-subtle text-dark">Syllabus</span></td>
+                        </tr>
+                         <tr>
+                            <td>Oct 28, 2025</td>
+                            <td>APPM 3310</td>
+                            <td>Midterm Exam 1</td>
+                             <td><input type="checkbox" class="form-check-input" disabled> To Do</td>
+                            <td><span class="badge bg-light border">Manual</span></td>
+                        </tr>
+                         <tr>
+                            <td>Nov 05, 2025</td>
+                            <td>CSCI 2400</td>
+                            <td>Project Part 1 - Memory Allocator</td>
+                            <td><input type="checkbox" class="form-check-input" disabled> To Do</td>
+                             <td><span class="badge bg-secondary-subtle text-dark">Syllabus</span></td>
+                        </tr>
+                        <tr>
+                            <td>Nov 10, 2025</td>
+                            <td>PHIL 1100</td>
+                            <td>Ethics Essay Draft</td>
+                             <td><input type="checkbox" class="form-check-input" checked disabled> Done</td>
+                            <td><span class="badge bg-light border">Manual</span></td>
+                        </tr>
+                         <tr>
+                            <td>Nov 15, 2025</td>
+                            <td>APPM 3310</td>
+                            <td>Homework 4 - Eigenvectors</td>
+                            <td><input type="checkbox" class="form-check-input" disabled> To Do</td>
+                             <td><span class="badge bg-secondary-subtle text-dark">Syllabus</span></td>
+                        </tr>
+                         </tbody>
+                </table>
+            </div>
+             <p class="text-muted small mt-2">Premium automatically extracts and categorizes deadlines from fully analyzed syllabi.</p>
+        </section>
+
+        <section id="study-resources" class="mb-5">
+            <h3 class="mb-3"><i class="fas fa-book-open me-2"></i>Study Resources</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5>General Resources (Freemium)</h5>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                            <i class="fas fa-flask fa-fw me-3 text-success"></i> Khan Academy (Math, Science, Computing)
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                           <i class="fas fa-pen-nib fa-fw me-3 text-info"></i> Purdue Online Writing Lab (OWL)
+                        </a>
+                         <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                           <i class="fas fa-layer-group fa-fw me-3 text-primary"></i> Quizlet (Flashcards & Study Sets)
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                           <i class="fas fa-question fa-fw me-3 text-secondary"></i> General Study Skills Guide
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                     <div class="card h-100 border-warning bg-light shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning"><i class="fas fa-star me-1"></i>Premium AI Study Tools</h5>
+                            <p class="card-text small text-muted">Upgrade to unlock AI features tailored to your specific course topics:</p>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="fas fa-lightbulb fa-fw me-2 text-muted"></i> AI Concept Explainers (e.g., "Explain recursion in CSCI 2270")</li>
+                                <li class="mb-2"><i class="fas fa-bolt fa-fw me-2 text-muted"></i> Flashcard Generation from Notes/Syllabus</li>
+                                <li class="mb-2"><i class="fas fa-question-circle fa-fw me-2 text-muted"></i> Practice Problem Suggestions</li>
+                                 <li class="mb-2"><i class="fas fa-comments fa-fw me-2 text-muted"></i> Ask Course-Specific Questions to your AI Advisor</li>
+                            </ul>
+                            <button class="btn btn-sm btn-warning mt-2" data-bs-toggle="modal" data-bs-target="#premiumModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="premium-class-features" class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>Ace Your Classes with Premium</h2>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-3">
+                        <i class="fas fa-search fa-2x text-primary mb-2"></i>
+                        <h6>Deep Syllabus Analysis</h6>
+                        <p class="small text-muted">Identify key concepts, get resource links, understand assignment weighting.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-3">
+                         <i class="fas fa-brain fa-2x text-success mb-2"></i>
+                        <h6>AI Study Tools</h6>
+                        <p class="small text-muted">Concept explanations, flashcards, practice recommendations tailored to you.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-3">
+                         <i class="fas fa-comments fa-2x text-info mb-2"></i>
+                        <h6>Course-Specific AI Chat</h6>
+                        <p class="small text-muted">Ask your AI Advisor detailed questions about course material 24/7.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3 text-center">
+                    <div class="p-3">
+                         <i class="fas fa-calendar-check fa-2x text-danger mb-2"></i>
+                        <h6>Automated Deadline Management</h6>
+                        <p class="small text-muted">Reliable extraction and categorization of due dates from syllabi.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-3">
+                 <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#premiumModal">Upgrade to Premium</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white mt-auto">
+         <div class="container text-center">
+            <small>Copyright &copy; EducAtIon Advisor <span id="current-year"></span></small>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-white-50 me-2">Privacy Policy</a>
+                <span class="text-white-50">|</span>
+                <a href="terms.html" class="text-white-50 ms-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="premiumModal" tabindex="-1" aria-labelledby="premiumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="premiumModalLabel"><i class="fas fa-star me-2"></i>EducAtIon Advisor Premium Features</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Upgrade to unlock powerful tools designed to maximize your success:</p>
+            <ul>
+              <li><strong>Unlimited AI Advisor Access:</strong> Get personalized, context-aware advice 24/7 based on your academic plan.</li>
+              <li><strong>Automated Scholarship Matching:</strong> Let our AI find relevant scholarships based on your complete profile.</li>
+              <li><strong>Advanced Academic Planning:</strong> Run "What-If" scenarios, optimize course sequences, and get proactive alerts.</li>
+              <li><strong>AI-Powered Study Tools:</strong> Generate summaries, flashcards, and get deeper insights from your course materials.</li>
+              <li><strong>Enhanced Career Tools:</strong> AI resume feedback, personalized job matching, and interview preparation.</li>
+              <li><strong>And much more!</strong></li>
+            </ul>
+            <p>Invest in your future and navigate college with confidence.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+            <a href="#" class="btn btn-warning">Upgrade Now!</a> </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Ensure this only runs once if you copy/paste JS files later
+        if (!window.footerYearUpdated) {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            window.footerYearUpdated = true; // Simple flag
+        }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Show: Dekalog 9
+Show: Batman: The Animated Series 8.9
+Show: Africa 8.8
+Show: Death Note 8.9
+Show: Cowboy Bebop 8.9
+Show: Black Mirror 8.9
+Show: The Civil War 9
+Show: Firefly 9
+Show: Fargo 8.9
+Show: Fullmetal Alchemist: Brotherhood 9
+Show: Frozen Planet 8.8
+Show: Last Week Tonight with John Oliver 8.9
+Show: The Blue Planet 8.9
+Show: One Punch Man 8.8
+Show: Monty Python's Flying Circus 8.8
+Show: True Detective 9
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Enter the show rating to count:
+Number of PG-13: 8
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Africa
+Black Mirror
+Fargo
+Frozen Planet
+Monty Python's Flying Circus
+True Detective
+======Main Menu======
+1. Get a show
+2. Search shows
+3. Print show catalog
+4. Display number of show ratings
+5. Print Leaves
+6. Quit
+> Goodbye!
+
+[GRADER] No leaked memory (Good).
