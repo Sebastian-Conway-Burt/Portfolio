@@ -91,6 +91,6 @@ Our team combines strong leadership, technical expertise, and a deep understandi
 
 ### Project Files
 
-* **[View Venture Plan Report (PDF)](EDU-Copilot Venture Plan.pdf)**
+* **[View Venture Plan Report (PDF)](EDU-Copilot_Venture_Plan.pdf)**
 * **[View Main Website Code (`main.py`)](https://sebastian-conway-burt.github.io/EDU-Copilot/)**
 * **[View Financial Statement (External Link for .xlsx, assumed)](./EDU-Copilot Venture Plan.pdf)**
