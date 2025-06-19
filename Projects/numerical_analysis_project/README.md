@@ -67,10 +67,10 @@ The project's codebase is organized into several Python scripts:
 3.  **Execution:** (Provide command-line instructions, e.g., "Run `python main.py` to start the experiments, or `python run_experiments.py` for specific runs.")
 
 ## Project Files
-
-* **[View the Code Files](./src/)**
+* **[View the Full Project Report](./Final Report.pdf)**
+* **[View the Source Files](./src/)**
 * **[View Raw Data Collection Script](./data_collection/yahoo_finance_data.py)**
 * **[View Experiment Results Summary](./experiment_results/experiment_summary_lambda_focus_v3.csv)**
-* **[View the Full Project Report](./Final_Report.pdf)**
+
 
 ---
