@@ -19,16 +19,19 @@ Here are some of my significant projects, showcasing my abilities in numerical a
 **Description:** Implemented and evaluated a robust multi-stage numerical pipeline in Python to construct and analyze implied volatility surfaces from real market data for over 100 assets. Conducted numerical experimentation regarding P-spline regularization and its affect on model accuracy, visual plausibility, smoothness, and efficiency.
 **Key Technologies/Skills:** Python, NumPy, P-splines, Implied Volatility, Numerical Analysis, Data Analysis.
 **[View Project Details](./Projects/numerical_analysis_project/README.md)**
+![Preview of a Volatility Surface](./images/Volatility_Surface.png)
+
 ### 2. EDU-Copilot
 **Description:** Directed a team of six in developing a business plan for an AI-driven academic advising tool. Designed and evaluated AI-generated responses, gaining hands-on experience with prompt engineering, output analysis, and refining model accuracy. Developed a structured graph-based data model to represent course dependencies.
 **Key Technologies/Skills:** AI Models, Prompt Engineering, Graph Data Models, Business Strategy, Project Leadership.
 **[View Project Details](./Projects/edu_copilot_project/README.md)**
+![Website](./images/EDU_Copilot.png)
 
 ### 3. Maze Solver using Dijkstra's Algorithm
 **Description:** Developed a Python-based maze solver that navigates complex mazes represented as images. This project leverages Dijkstra's algorithm to find the shortest path, where pixel color differences define edge weights, demonstrating graph traversal and image processing techniques.
 **Key Technologies/Skills:** Python, NumPy, OpenCV, Dijkstra's Algorithm, Graph Theory, Image Processing.
 **[View Project Details](./Projects/maze_dijkstra_solver/README.md)**
-
+![Maze Example](./images/Maze_Solution.png)
 ---
 
 ## Coursework
