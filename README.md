@@ -32,6 +32,7 @@ Here are some of my significant projects, showcasing my abilities in numerical a
 **Key Technologies/Skills:** Python, NumPy, OpenCV, Dijkstra's Algorithm, Graph Theory, Image Processing.
 **[View Project Details](./Projects/maze_dijkstra_solver/README.md)**
 ![Maze Example](./images/Maze_Solution.png)
+
 ---
 
 ## Coursework
